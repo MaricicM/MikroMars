@@ -121,7 +121,7 @@ img.l-Logo {
 .l-container {
   display: flex;
   padding: .1em;
-  background: radial-gradient(rgba(73, 164, 220, 0.88), #3c85b2);
+  background: radial-gradient(rgba(73, 164, 220, 0.8), #3c85b2);
   margin-top: 3.5em; }
   .l-container .l-row {
     margin-left: 25rem;
