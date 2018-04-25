@@ -10,9 +10,9 @@ $secondary-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida 
 }
 
 // BOJE
-$boja_osnovna: #red;
-$boja_logo_plava: #green;
-$boja_logo_narandzasta: #blue;
+$boja_osnovna: #e2e2e2;
+$boja_logo_plava: #3c85b2;
+$boja_logo_narandzasta: #ff6a00;
 $boja_radial_belo-sivo: radial-gradient(rgba(255, 255, 255, 0.80) 60%, rgba(226, 226, 226, 0.80));
 $boja_apsolutno_crna: #000000;
 
@@ -152,7 +152,7 @@ img.l-Logo {
 .l-container {
     display: flex;
     padding: .1em;
-    background: radial-gradient(rgba(73, 164, 220, 0.88),$boja_logo_plava);
+    background: radial-gradient(rgba(73, 164, 220, 0.80), $boja_logo_plava);
     margin-top: 3.5em; 
     .l-row{
         margin-left:25rem;

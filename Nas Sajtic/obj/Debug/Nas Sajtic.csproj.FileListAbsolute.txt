@@ -244,3 +244,85 @@ C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajti
 C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.csprojResolveAssemblyReference.cache
 C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.dll
 C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.pdb
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\ApplicationInsights.config
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\csc.exe
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\System.Collections.Immutable.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\System.Reflection.Metadata.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\vbc.exe
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\VBCSCompiler.exe
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\roslyn\VBCSCompiler.exe.config
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Nas Sajtic.dll.config
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Nas Sajtic.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Nas Sajtic.pdb
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Antlr3.Runtime.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\EntityFramework.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\EntityFramework.SqlServer.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.DependencyCollector.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.Web.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.WindowsServer.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.ApplicationInsights.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.Cookies.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.Facebook.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.Google.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.OAuth.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.Twitter.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Web.Infrastructure.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Newtonsoft.Json.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Owin.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.Helpers.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.Mvc.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.Optimization.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.Razor.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.WebPages.Deployment.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.WebPages.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.WebPages.Razor.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\WebGrease.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.DependencyCollector.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.Web.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AI.WindowsServer.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.ApplicationInsights.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.Helpers.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.Mvc.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.Optimization.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.Razor.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.WebPages.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.WebPages.Deployment.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\System.Web.WebPages.Razor.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Antlr3.Runtime.pdb
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Newtonsoft.Json.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\EntityFramework.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\EntityFramework.SqlServer.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.Facebook.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.Cookies.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.OAuth.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.Google.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.Twitter.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\obj\Debug\Nas Sajtic.csprojResolveAssemblyReference.cache
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\obj\Debug\Nas Sajtic.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\MikroMars\Nas Sajtic\obj\Debug\Nas Sajtic.pdb
