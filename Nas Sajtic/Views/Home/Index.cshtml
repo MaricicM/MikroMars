@@ -1,0 +1,162 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="container index">
+    <div class="row" style="width:100%;height:200px;">
+        <div class="col-sm-offset-2 col-sm-8" style="position:relative;">
+
+            <span id="sp1" class="sp1">Brza izrada</span>
+
+            <span id="sp101" class="sp2" style="left:10px;">O</span>
+            <span id="sp102" class="sp2" style="left:70px;">r</span>
+            <span id="sp103" class="sp2" style="left:110px;">i</span>
+            <span id="sp104" class="sp2" style="left:140px;">g</span>
+            <span id="sp105" class="sp2" style="left:200px;">i</span>
+            <span id="sp106" class="sp2" style="left:230px;">n</span>
+            <span id="sp107" class="sp2" style="left:285px;">a</span>
+            <span id="sp108" class="sp2" style="left:340px;">l</span>
+            <span id="sp109" class="sp2" style="left:370px;">n</span>
+            <span id="sp110" class="sp2" style="left:430px;">i</span>
+
+            <span id="sp111" class="sp2" style="left:495px;">D</span>
+            <span id="sp112" class="sp2" style="left:555px;">i</span>
+            <span id="sp113" class="sp2" style="left:585px;">z</span>
+            <span id="sp114" class="sp2" style="left:640px;">a</span>
+            <span id="sp115" class="sp2" style="left:700px;">j</span>
+            <span id="sp116" class="sp2" style="left:730px;">n</span>
+
+            <span id="sp201" class="sp3">Povoljne</span>
+            <span id="sp202" class="sp4">Cene</span>
+
+            <img class="logo img" src="~/Content/Images/logo/mm-logo-tekst.png" style="max-width:25em;" />            
+        </div>
+    </div>
+    <div class="row" style="position:relative; height:500px;">
+        <img class="laptop img" src="~/Content/Images/LapTop.png" />
+        <img class="fon img" src="~/Content/Images/Phone.png" />
+        <img class="tablet img" src="~/Content/Images/office-free-for-android.png" />
+        <img class="gif img" src="~/Content/Images/gif/giphy2.gif" />
+    </div>    
+</div>
+<div class="l-wrapper">
+    <div class="l-container">
+        <div class="l-row">
+            <div class="l-row-left">
+                <h4>Izrada sajtova</h4>
+                <p>
+                    Sa velikim brojem uradjenih kako običnih-informativnih sajtova tako i velikih online prodavnica, sajtova za nekretnine, medicinskih sajtova, prezentacija za hotele, male i velike privatne firme, kao i sajtova sa izuzetno specifičnim zahtevima smatramo da smo dovoljno iskusni, kvalitetni da vaš novi sajt u potpunosti prezentuje vašu delatnost na najbolji mogući način.
+                    Dobar web dizajn, kao i dobra i dugoročna pozicija vašeg sajta prilikom pretrage na google-u ( eng, SEO ) obezbediće vam kvalitetne posetioce sajta i potencijalne korisnike vaših usluga.
+                </p>
+            </div>
+            <div class="l-row-right">
+                <img class="imag" src="~/Content/Images/gif/123.gif" style="height:200px;float:right;" />
+            </div>
+        </div>
+    </div> <br />
+    <h5>POVERITE NAM IZRADU VAŠEG SAJTA I UVERITE SE U KVALITET I PROFESIONALNI ODNOS PREMA NAŠIM KLIJENTIMA</h5> 
+      <div class="l-row"></div>
+    <div class="l-proces">        
+        <div class="l-proces-row">
+            <div class="l-proces-img">
+                <img src="~/Content/Images/razgovor-o-sajtu-1.png" />
+                <h5>UPOZNAVANJE</h5>
+                <p>Da bi našli najbolje rešenje za vaš sajt moramo se upoznati i sa vašim poslom, koji su vam ciljevi i zadaci.</p>
+            </div>
+            <div class="l-proces-img">
+                <img src="~/Content/Images/dizajn-sajta-1.png" />
+                <h5>DIZAJN SAJTA</h5>
+                <p>Dogovor sa vama oko dizajna sajta, vašim željama oko izgleda i funkcionalnosti sajta, bojama…</p>
+            </div>
+            <div class="l-proces-img">
+                <img src="~/Content/Images/kodiranje-sajta.png" />
+                <h5>IZRADA SAJTA</h5>
+                <p>Sam proces izrade sajta, optimizacija za pretragu kao i optimizacija sajta za mobilne telefone.</p>
+            </div>
+            <div class="l-proces-img">
+                <img src="~/Content/Images/pustanje-sajta-online.png" />
+                <h5>POSTAVLJANJE ON-LINE</h5>
+                <p>Pošto se sajt uradi, postavlja se online, izvode se poslednje provere da sve radi perfektno i bez greške.</p>                
+            </div>
+        </div>
+    </div> 
+</div>
+
+@section scripts{
+    <script>
+
+        $(function () {
+            $('.laptop, .fon, .tablet, .gif').addClass('opaque');
+        });
+
+
+
+        $('#sp1').delay(100).animate({ left: 150 }, 1200).delay(500).animate({ left: -50 }, 500).animate({ left: 1500 }, 1000, function () {
+            var div = document.getElementById("sp1");
+            div.parentNode.removeChild(div);
+
+            $('#sp101').animate({ top: 100 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 1500, function () {
+                $(this).addClass('fadeOut').delay(700).queue(function () {
+
+                    $('#sp201').addClass('sp3-f').delay(1500).queue(function () {
+                        var divs = document.getElementsByClassName('sp2');
+                        for (var i = 0; i < 16; i++) {
+                            divs[0].parentNode.removeChild(divs[0]);
+                        }
+                        $('#sp202').addClass('sp4-f').delay(1500).queue(function () {
+                            $('.sp3, .sp4').addClass('transparent');
+                            $('.logo').delay(800).queue(function () {
+                                $(this).addClass('opaque');
+                            });
+                        });
+                    });
+                });
+            });
+            $('#sp102').delay(50).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 1400, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp103').delay(100).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 1300, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp104').delay(150).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 1200, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp105').delay(200).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 1100, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp106').delay(250).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 1000, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp107').delay(300).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 900, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp108').delay(350).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 800, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp109').delay(400).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 700, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp110').delay(450).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 600, function () {
+                $(this).addClass('fadeOut');
+            });
+
+            $('#sp111').delay(500).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 500, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp112').delay(550).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 400, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp113').delay(600).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 300, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp114').delay(650).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 200, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp115').delay(700).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 100, function () {
+                $(this).addClass('fadeOut');
+            });
+            $('#sp116').delay(750).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 0, function () {
+                $(this).addClass('fadeOut');
+            });
+        });
+    </script>
+}

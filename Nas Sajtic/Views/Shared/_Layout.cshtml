@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("styles", required: false)
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top l-navbar-color">
+        <div class="container">
+            <div class="l-navbar">
+                <div class="l-navbar-left">
+                    <a href="/Home/Index"><img src="~/Images/mm-logo-znak.png" class="l-Logo active" /></a>
+                </div>
+               <div class="l-navbar-middle">
+                   <div class="navbar-header">
+                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                       </button>
+                   </div>
+                   <div class="navbar-collapse collapse">
+                       <ul class="nav navbar-nav">
+                           <li><a class="as" href="/Home/Galerija">Galerija</a></li>
+                           <li><a class="as" href="/Home/Ponuda">Ponuda</a></li>
+                           <li><a class="as" href="/Home/ONama">O nama</a></li>
+                           <li><a class="as" href="/Home/Kontakt">Kontakt</a></li>
+                       </ul>
+                       @*@Html.Partial("_LoginPartial")*@
+                   </div>
+               </div>
+                <div class="l-navbar-right"></div>
+            </div>
+        </div>
+    </div>
+    <div style="overflow:hidden;">
+        @RenderBody()
+    </div>
+    <footer class="l-custom-footer">
+        <div class="container">
+            <div class="row row-wrap">
+                <div class="col-md-4">
+                    <a class="l-logo" href="/Home/Index">
+                        <img src="~/Content/Images/logo/mm-logo-negativ.png" height="30" alt="MikroMars" title="MikroMars Logo" /><br />                        
+                    </a>
+                    <div>
+                        <h5>OSTANI U KONTAKTU</h5>
+                        <span><i class="fab fa-instagram fa-2x"></i> </span><span><i class="fab fa-linkedin fa-2x"></i> </span><span><i class="fab fa-twitter-square fa-2x"></i> </span><span><i class="fab fa-facebook fa-2x"></i> </span><span><i class="fab fa-google-plus fa-2x"></i> </span>
+                    </div>
+                </div>
+                <div class="col-md-4" style="">
+                    <ul class="l-footer-ul">
+                        <li><a href="/Home/ONama">O nama</a></li>
+                        <li><a href="/Home/Index">Početna</a></li>
+                        <li><a href="/Home/Galerija">Galerija</a></li>
+                        <li><a href="/Home/Ponuda">Ponuda</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4" style="text-align:right;">
+                    <p><b>KONTAKT</b>:</p>
+                    <p><strong>Miloš Maričić</strong> - 0123456789</p>
+                    <p><strong>Mirko Lišanin</strong> - 0123456789</p>
+                </div>
+            </div>
+            <hr style="color:gray;border:0.5px solid;" />
+            <div class="row row-wrap">
+                <div class="col-md-12 ta-center">
+                    <p style="color:gray">MikroMars polaže sva prava na sajt i sve njegove delove.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ta-center">
+            <p>MikroMars &copy; @DateTime.Now.Year</p>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

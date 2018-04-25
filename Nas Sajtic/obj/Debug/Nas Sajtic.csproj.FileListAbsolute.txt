@@ -1,0 +1,246 @@
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\ApplicationInsights.config
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\csc.exe
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\System.Collections.Immutable.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\vbc.exe
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\VBCSCompiler.exe
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\roslyn\VBCSCompiler.exe.config
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Nas Sajtic.dll.config
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Nas Sajtic.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Nas Sajtic.pdb
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Antlr3.Runtime.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\EntityFramework.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\EntityFramework.SqlServer.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.Web.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.WindowsServer.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.ApplicationInsights.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.Google.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Web.Infrastructure.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Newtonsoft.Json.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Owin.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.Helpers.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.Mvc.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.Optimization.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.Razor.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.WebPages.Deployment.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.WebPages.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.WebPages.Razor.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\WebGrease.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.Web.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AI.WindowsServer.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.ApplicationInsights.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.Helpers.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.Mvc.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.Optimization.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.Razor.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.WebPages.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.WebPages.Deployment.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\System.Web.WebPages.Razor.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Antlr3.Runtime.pdb
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Newtonsoft.Json.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\EntityFramework.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\EntityFramework.SqlServer.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.Google.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\obj\Debug\Nas Sajtic.csprojResolveAssemblyReference.cache
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\obj\Debug\Nas Sajtic.dll
+c:\users\krsh\documents\visual studio 2015\Projects\Nas Sajtic\Nas Sajtic\obj\Debug\Nas Sajtic.pdb
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\ApplicationInsights.config
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\csc.exe
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\System.Collections.Immutable.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\System.Reflection.Metadata.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\vbc.exe
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\VBCSCompiler.exe
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\roslyn\VBCSCompiler.exe.config
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Nas Sajtic.dll.config
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Nas Sajtic.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Nas Sajtic.pdb
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Antlr3.Runtime.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\EntityFramework.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\EntityFramework.SqlServer.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.DependencyCollector.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.Web.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.WindowsServer.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.ApplicationInsights.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.Core.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Cookies.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Facebook.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Google.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.OAuth.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Twitter.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Web.Infrastructure.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Newtonsoft.Json.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Owin.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.Helpers.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.Mvc.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.Optimization.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.Razor.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.WebPages.Deployment.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.WebPages.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.WebPages.Razor.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\WebGrease.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.DependencyCollector.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.Web.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AI.WindowsServer.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.ApplicationInsights.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.Helpers.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.Mvc.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.Optimization.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.Razor.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.WebPages.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.WebPages.Deployment.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\System.Web.WebPages.Razor.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Antlr3.Runtime.pdb
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Newtonsoft.Json.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\EntityFramework.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\EntityFramework.SqlServer.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.Core.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Facebook.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Cookies.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.OAuth.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Google.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Twitter.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.csprojResolveAssemblyReference.cache
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.dll
+D:\MVS_Projects\Visual Studio 2015\Projects\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.pdb
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\ApplicationInsights.config
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\csc.exe
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\vbc.exe
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\VBCSCompiler.exe
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Nas Sajtic.dll.config
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Nas Sajtic.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Nas Sajtic.pdb
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Antlr3.Runtime.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\EntityFramework.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\EntityFramework.SqlServer.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.Web.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Newtonsoft.Json.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Owin.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.Helpers.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.Mvc.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.Optimization.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.Razor.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.WebPages.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.WebPages.Razor.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\WebGrease.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.Web.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.Helpers.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.Mvc.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.Optimization.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.Razor.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.WebPages.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\System.Web.WebPages.Razor.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Antlr3.Runtime.pdb
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Newtonsoft.Json.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\EntityFramework.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\EntityFramework.SqlServer.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.csprojResolveAssemblyReference.cache
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.dll
+C:\Users\Krsh\Documents\Visual Studio 2015\Projects\Nas Sajtic\NasSajt\Nas Sajtic\obj\Debug\Nas Sajtic.pdb

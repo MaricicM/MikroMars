@@ -1,0 +1,305 @@
+﻿//FONTOVI
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+@font-face {
+    font-family: 'Kimberley';
+    src: url('fonts/kimberley bl.ttf') format('truetype');
+}
+
+// BOJE
+$boja_osnovna: #red;
+$boja_logo_plava: #green;
+$boja_logo_narandzasta: #blue;
+$boja_radial_belo-sivo: radial-gradient(rgba(255, 255, 255, 0.80) 60%, rgba(226, 226, 226, 0.80));
+$boja_apsolutno_crna: #000000;
+
+// GLOBAL
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    z-index: -1040 !important;
+    background-image:linear-gradient(to right bottom, rgba(255, 255, 253, 0.80), rgba(73, 164, 220, 0.80)), url(Images/hero.jpg);  
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+    font-family: Montsserrat,sans-serif;
+}
+.imag {
+    opacity: 1 !important;
+}
+img.l-Logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    opacity: 1 !important;
+}
+.ta-center{
+    text-align:center !important;
+    margin-bottom:0;
+    padding-top:0;
+    padding-bottom:10px;
+    line-height:0;
+}
+
+// INDEX
+.index {
+    .img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        opacity: 0;
+    }
+
+    .fadeOut {
+        transform: rotate(90deg);
+        top: 300px !important;
+        opacity: 0;
+        transition: transform 2s, top 3s, opacity 2s;
+    }
+
+    .fon {
+        left: 323px;
+        top: -235px;
+        position: relative;
+    }
+
+    .gif {
+        left: -6px;
+        top: -1036px;
+        width: 578px;
+        height: 322px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .logo {
+        margin-top: 60px;
+        opacity: 0;
+    }
+
+    .opaque {
+        opacity: 1;
+        transition: opacity 4s;
+    }
+
+    .sp1, .sp2, .sp3, .sp4 {
+        font-family: Kimberley;
+        position: absolute;
+        display: inline-block;
+        font-size: 80px;
+        color: black;
+        z-index: -2;
+        white-space: nowrap;
+    }
+
+    .sp1 {
+        top: 70px;
+        left: -1500px;
+    }
+
+    .sp2 {
+        top: -150px;
+    }
+
+    .sp3 {
+        font-size: 0px;
+        left: 100px;
+        opacity: 0;
+    }
+
+    .sp3-f {
+        top: 100px;
+        font-size: 80px;
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    .sp4 {
+        color: red;
+        font-size: 200px;
+        top: -20px;
+        left: 470px;
+        opacity: 0;
+    }
+
+    .sp4-f {
+        opacity: 1;
+        color: black;
+        font-size: 80px;
+        top: 100px;
+        transition: color 1s, font-size 1s, top 1s;
+    }
+
+    .tablet {
+        left: -440px;
+        top: -525px;
+        width: 450px;
+        position: relative;
+    }
+
+    .transparent {
+        opacity: 0;
+        transition: all 2s;
+    }
+}
+.l-container {
+    display: flex;
+    padding: .1em;
+    background: radial-gradient(rgba(73, 164, 220, 0.88),$boja_logo_plava);
+    margin-top: 3.5em; 
+    .l-row{
+        margin-left:25rem;
+        margin-right:25rem;
+        flex:1;
+        display:flex;
+        padding:2em;
+        .l-row-left{
+            flex:1;
+            padding:10px;
+            text-align:justify;
+            p{
+                color:white;
+            }
+        }
+
+        .l-row-right {
+            flex: 1;
+            padding: 10px;
+        }        
+    }    
+    h4{
+        margin-top:1em;
+    }
+} // < -- FLEX
+.l-proces{
+    display:flex;
+    padding:1em;
+    color:$boja_logo_plava;
+    background-color:white;
+    .l-proces-row{
+        margin-left:25rem;
+        margin-right:25rem;
+        flex:1;
+        display:flex;
+        justify-content:space-between;
+        .l-proces-img{
+            flex-basis:23%;
+            padding:10px;
+            text-align:center;
+            img{
+                cursor:pointer;
+            }
+            h5{
+                margin-top:1em;
+                font-weight:700;
+            }
+            p{
+                margin-top:1em;
+            }
+        }
+    }  
+} // < -- FLEX
+.l-wrapper {
+    margin-top: 4rem;
+    left: 0;
+    right: 0;
+    color: white;
+    //background-color: $boja_logo_plava;
+    padding: .5em;
+
+    & h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+}
+.ponuda {
+    h1 {
+        text-align: center;
+    }
+}
+.radoviUToku {
+    display: block;
+    margin: auto;
+    max-width: 500px;
+}
+
+// LAYOUT
+.l-custom-footer{
+    margin-top:30px;
+    background-color:black;
+    padding-top:25px;
+    background: $boja_apsolutno_crna;
+    p{
+        color: white;
+        font-size:.8em;
+    }
+    img{
+        box-shadow:rgba(255,255,255,.2);
+    }
+}
+.l-footer-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+.l-navbar {
+    display: flex;
+    justify-content: space-around;
+
+    a.as {
+        color: $boja_radial_belo-sivo !important;        
+    }
+    .as:hover,:active{
+            color:$boja_logo_narandzasta !important;
+        }   
+    .l-navbar-color {
+        background-color: $boja_osnovna !important;
+        border-color: $boja_logo_plava !important;
+    }
+
+    .l-navbar-left {
+        flex: 1;
+    }
+
+    .l-navbar-middle {
+        flex: 1;
+    }
+
+    .l-navbar-right {
+        flex: 1;
+    }
+} // < -- FLEX
+.l-navbar-color {
+    background-color: $boja_osnovna !important;
+    border-color: $boja_logo_plava !important;
+} // < -- FLEX
+
+// GALERY
+.l-image-display {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    .l-image {
+        flex: 1;
+        text-align: center;
+
+        img {
+            max-width: 270px;
+            margin-bottom: 15px;
+            border: 2px double $boja_logo_narandzasta;
+
+            &:hover {
+                transform: scale(1.5);
+                transition: transform 0.25s ease;
+            }
+        }
+    }
+} // < -- FLEX
