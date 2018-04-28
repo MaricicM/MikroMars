@@ -838,6 +838,9 @@ img.l-Logo {
         .modal-dialog{
             width: fit-content;
         }
+        .row:last-child{
+            margin-bottom:$horizontalni_razmak;
+        }
 }
 
 // O NAMA
