@@ -14,7 +14,7 @@
 
 body {
   z-index: -1040 !important;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.63)), url(Images/hero.jpg);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(226, 226, 226, 0.8)), url(Images/hero.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,15 +33,49 @@ html {
 img.l-Logo {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  height: 3.5rem;
-  opacity: 1 !important; }
+  opacity: 1 !important;
+  backface-visibility: hidden; }
+  img.l-Logo-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    height: 7rem;
+    transition: all .3s; }
+    img.l-Logo-header:hover {
+      transform: scale(1.2); }
+  img.l-Logo-footer {
+    height: 3.5rem;
+    transition: all .3s; }
+    img.l-Logo-footer:hover {
+      transform: scale(1.2); }
+
+.l-Logo1 {
+  height: 7rem;
+  transition: all .3s;
+  backface-visibility: hidden; }
+  .l-Logo1:hover {
+    transform: scale(1.2); }
 
 .ta-center {
-  text-align: center !important;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 1rem;
-  line-height: 0; }
+  text-align: center !important; }
+
+.l-margina-gore-velika {
+  margin-top: 12rem; }
+
+.l-margina-gore-srednja {
+  margin-top: 6rem; }
+
+.l-margina-gore-mala {
+  margin-top: 2rem; }
+
+.l-margina-dole-velika {
+  margin-bottom: 12rem; }
+
+.l-margina-dole-srednja {
+  margin-bottom: 6rem; }
+
+.l-margina-dole-mala {
+  margin-bottom: 2rem; }
 
 .dugme:link, .dugme:visited {
   text-transform: uppercase;
@@ -123,7 +157,7 @@ img.l-Logo {
   transition: opacity 1s; }
 
 .index .sp1, .index .sp2, .index .sp3, .index .sp4 {
-  font-family: Kimberley;
+  font-family: Russo One;
   position: absolute;
   display: inline-block;
   font-size: 8rem;
@@ -159,7 +193,7 @@ img.l-Logo {
 
 .index .sp4-f {
   opacity: 1;
-  color: #3c85b2;
+  color: #7acfef;
   font-size: 8rem;
   top: 10rem;
   transition: color 1s, font-size 1s, top 1s; }
@@ -182,11 +216,11 @@ img.l-Logo {
 .l-container {
   display: flex;
   padding: .16rem;
-  background: radial-gradient(rgba(1, 159, 222, 0.8), #3c85b2); }
+  background: linear-gradient(to right bottom, #7acfef, #49a9ce); }
   .l-container .l-row {
     flex: 1;
     display: flex;
-    padding: 3.2rem;
+    padding: 10rem 5rem;
     background-color: transparent;
     max-width: 114rem;
     margin: 0 auto; }
@@ -204,7 +238,7 @@ img.l-Logo {
 
 .l-proces {
   display: flex;
-  padding: 3rem 0rem;
+  padding: 10rem 0rem;
   color: #3c85b2;
   background-color: #fff; }
   .l-proces .l-proces-row {
@@ -221,7 +255,7 @@ img.l-Logo {
         cursor: pointer; }
       .l-proces .l-proces-row .l-proces-img h5 {
         margin-top: 1.9rem;
-        font-weight: 700; }
+        font-weight: 100; }
       .l-proces .l-proces-row .l-proces-img p {
         margin-top: .16rem; }
 
@@ -233,9 +267,9 @@ img.l-Logo {
     text-align: center; }
   .l-wrapper h4 {
     padding: 3rem 2rem;
-    background-color: #019fde;
+    background-color: #49a9ce;
     margin: 0 auto;
-    font-weight: 900;
+    font-weight: 500;
     color: #fff;
     font-size: 1.6rem; }
 
@@ -248,7 +282,7 @@ img.l-Logo {
   max-width: 50rem; }
 
 .l-custom-footer {
-  padding-top: 2.5rem;
+  padding-top: 5rem;
   background: #000000;
   margin-bottom: 0; }
   .l-custom-footer p {
@@ -256,6 +290,12 @@ img.l-Logo {
     font-size: 1.28rem; }
   .l-custom-footer img {
     box-shadow: rgba(0, 0, 0, 0.2); }
+  .l-custom-footer .l-soc-net {
+    margin-right: 5rem;
+    transition: all .3s;
+    cursor: pointer; }
+    .l-custom-footer .l-soc-net:hover {
+      transform: scale(1.2); }
 
 .l-footer-ul {
   list-style: none;
@@ -293,10 +333,13 @@ img.l-Logo {
   text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
   font-size: 3.7rem;
   font-weight: 400;
-  backface-visibility: hidden;
-  animation-name: sLevaNaDesno;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
+  backface-visibility: hidden; }
+  .l-naslov-1-animacija {
+    animation-name: sLevaNaDesno;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .l-naslov-1-narandzasta {
+    color: #ff6a00; }
 
 .l-naslov-2 {
   text-transform: uppercase;
@@ -310,11 +353,16 @@ img.l-Logo {
 
 .l-naslov-3 {
   text-transform: uppercase;
-  color: #ff6a00;
   text-shadow: 0 0.3rem 1rem rgba(255, 255, 255, 0.5);
   font-size: 1.7rem;
   backface-visibility: hidden;
   margin-bottom: 3rem; }
+  .l-naslov-3-bela {
+    color: #fff;
+    text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5); }
+  .l-naslov-3-narandzasta {
+    color: #ff6a00;
+    text-shadow: 0 0.3rem 1rem rgba(255, 255, 255, 0.5); }
 
 .l-paragraf {
   text-align: justify;
@@ -338,6 +386,9 @@ img.l-Logo {
     padding: 4rem; }
   .l-sekcija-narandzasta {
     background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+    padding: 4rem; }
+  .l-sekcija-siva {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.8) 60%, rgba(226, 226, 226, 0.8));
     padding: 4rem; }
 
 .l-red {
@@ -368,6 +419,10 @@ img.l-Logo {
     width: calc(2 * ((100% - 3 *4rem) / 4) + 4rem); }
   .l-red .l-kol-3-od-4 {
     width: calc(3 * ((100% - 3 *4rem) / 4) + 2 * 4rem); }
+  .l-red-animacija {
+    animation-name: odozdoNaGore;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
 
 .l-karta {
   perspective: 150rem;
@@ -405,17 +460,17 @@ img.l-Logo {
       width: 100%;
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .l-karta__naslov {
-    font-size: 1.6rem;
-    font-weight: 900;
+    font-size: 1.5rem;
+    font-weight: 100;
     text-transform: uppercase;
-    text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0.3rem 1rem rgba(255, 255, 255, 0.5);
     text-align: right;
-    color: #3c85b2;
+    color: #49a9ce;
     font-family: "Montserrat", sans-serif;
-    padding: .8rem;
+    padding: .5rem;
     position: absolute;
     top: 13rem;
-    right: 2rem;
+    right: .5rem;
     z-index: 3; }
   .l-karta__detalji {
     font-size: 1.2rem;
@@ -460,7 +515,7 @@ img.l-Logo {
       .l-flajer__pozadina--nazad-1 {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .l-flajer__pozadina--nazad-2 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+        background-image: linear-gradient(to right bottom, #7acfef, #5643fa); }
       .l-flajer__pozadina--nazad-3 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .l-flajer:hover .l-flajer__pozadina--napred {
@@ -485,7 +540,7 @@ img.l-Logo {
       color: #fff;
       font-weight: 900; }
     .l-flajer__slika--2 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+      background-image: linear-gradient(to right bottom, #7acfef, #5643fa);
       font-family: "Montserrat", sans-serif;
       text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
       color: #fff;
@@ -518,7 +573,7 @@ img.l-Logo {
     font-family: "Montserrat", sans-serif;
     padding: .8rem;
     position: absolute;
-    top: 5rem;
+    top: 500rem;
     right: 40%;
     z-index: 3; }
   .l-flajer__detalji {
@@ -554,7 +609,7 @@ img.l-Logo {
 
 .l-onama {
   position: relative;
-  padding: 15rem 0; }
+  padding: 10rem 0 15rem 0; }
 
 .l-tim {
   width: 75%;
@@ -569,7 +624,7 @@ img.l-Logo {
   .l-tim > * {
     transform: skewX(12deg); }
   .l-tim__oblik {
-    background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+    background-image: linear-gradient(to right bottom, #7acfef, #5643fa);
     width: 15rem;
     height: 15rem;
     float: left;
@@ -577,11 +632,29 @@ img.l-Logo {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
-  .l-tim__text {
-    transform: skewX(12deg); }
+    .l-tim__oblik-firma {
+      height: 15rem;
+      transform: translateX(-3rem) skewX(12deg);
+      position: relative;
+      text-align: center; }
   .l-tim__slika {
     height: 100%;
     backface-visibility: hidden; }
+    .l-tim__slika-firma {
+      height: 15rem;
+      transform: translateX(-3rem);
+      position: relative;
+      text-align: center; }
+      .l-tim__slika-firma-img {
+        width: 100%;
+        opacity: .05; }
+  .l-tim__text {
+    transform: skewX(12deg); }
+    .l-tim__text-firma {
+      transform: translateX(-3rem) skewX(12deg);
+      position: relative;
+      text-align: center;
+      color: #000000; }
   .l-tim__ime {
     position: absolute;
     top: 50%;
