@@ -606,9 +606,28 @@ img.l-Logo {
   .l-flajer__cena-vrednost {
     font-size: 6rem;
     font-weight: 100; }
+	
+.SpecPonudaMini h1 {
+  text-align: center; }
+
+.SpecPonudaMini img {
+  max-width: 100%; }
+
+.SpecPonudaMini .col-md-4 {
+  margin-bottom: 20px; }
+
+.SpecPonudaMini #imagepreview {
+  width: unset !important;
+  height: unset !important; }
+
+.SpecPonudaMini .modal-dialog {
+  width: fit-content; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f1a40c25e4c827f8d8a194900e5f307293a7a97e
 .SpecPonudaMini h1 {
   text-align: center; }
 
@@ -628,7 +647,10 @@ img.l-Logo {
 .SpecPonudaMini .row:last-child {
   margin-bottom: 4rem; }
 
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> f1a40c25e4c827f8d8a194900e5f307293a7a97e
 .l-onama {
   position: relative;
   padding: 10rem 0 15rem 0; }

@@ -333,6 +333,11 @@
     <Content Include="Views\Home\ONama.cshtml" />
     <Content Include="Views\Home\Kontakt.cshtml" />
     <Content Include="Views\Home\RadoviUToku.cshtml" />
+    <Content Include="Views\Ponuda\Ponuda.cshtml" />
+    <Content Include="Views\Ponuda\SpecPonudaMini.cshtml" />
+    <Content Include="Views\Ponuda\_Ponuda1.cshtml" />
+    <Content Include="Views\Ponuda\_Ponuda2.cshtml" />
+    <Content Include="Views\Ponuda\_Ponuda3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
