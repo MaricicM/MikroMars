@@ -821,6 +821,24 @@ img.l-Logo {
         font-weight:100;        
     }
 }
+.SpecPonudaMini{
+     h1{
+            text-align:center;
+        }
+        img{
+            max-width:100%;
+        }
+        .col-md-4{
+            margin-bottom:20px;
+        }
+        #imagepreview{
+            width:unset !important;
+            height: unset !important;
+        }
+        .modal-dialog{
+            width: fit-content;
+        }
+}
 
 // O NAMA
 
