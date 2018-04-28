@@ -3,25 +3,227 @@
     ViewBag.Title = "Ponuda";
 }
 
-<div class="container ponuda">
-    <div class="row">
-        <br />
-        <h1>Ponuda</h1>
-        <hr />
-        <div class="col-sm-3">
-            <div class="col-xs-12"> <a data-ajax="true" data-ajax-update="#prikaz" href="/Home/_Ponuda1" class="btn btn-primary">Ponuda 1</a> </div><br />
-            <div class="col-xs-12"> <a data-ajax="true" data-ajax-update="#prikaz" href="/Home/_Ponuda2" class="btn btn-primary">Ponuda 2</a> </div><br />
-            <div class="col-xs-12"> <a data-ajax="true" data-ajax-update="#prikaz" href="/Home/_Ponuda3" class="btn btn-primary">Ponuda 3</a> </div><br />
+<div class="l-sekcija">
+    <div class="l-red">
+        <h1 class="l-naslov-1">Nudimo</h1>
+        <p class="l-paragraf l-paragraf-animacija l-paragraf-bela">
+            Našu generalnu ponudu smo podelili u tri paketa: <b>MINI</b>, <b>OSNOVNI</b> i <b>PLUS</b> paket. Svaki od njih je specifičan i razlikuje se kako u ceni i načinu izrade tako i u izdvojenom vremenu za kreiranje. Ukoliko se ne uklapate ni u jedan od ponuđenih paketa, da li što se tiče dizajna ili budžeta, svakako stojimo na raspolaganju da vam kreiramo sajt po vašim potrebama.
+        </p>
+    </div>
+    <div class="l-red">
+        <div class="l-kol-1-od-3">
+            <div class="l-flajer">
+                <div class="l-flajer__pozadina l-flajer__pozadina--napred l-flajer__pozadina--napred-1">
+                    <div class="l-flajer__slika l-flajer__slika--1">
+                        <h1><b>MINI</b></h1>
+                    </div>                    
+                    <div class="l-flajer__detalji">
+                        <ul>
+                            <li>7-10 dana izrade</li>
+                            <li>Do 5 stranica</li>
+                            <li>Responzivni dizajn</li>
+                            @*<li>Galerija</li>
+                            <li>Kontakt forma</li>
+                            <li>Skripte</li>*@
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-flajer__pozadina l-flajer__pozadina--nazad l-flajer__pozadina--nazad-1">
+                    <div class="l-flajer__opis">
+                        <div class="l-flajer__cena-box">
+                            <p class="l-flajer__cena-samo">Samo</p>
+                            <p class="l-flajer__cena-vrednost">45€</p>
+                        </div>
+                            <a href="#" class="dugme dugme--belo dugme_animacija">Pogledaj primer</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div id="prikaz" class="col-sm-9">
-
+        <div class="l-kol-1-od-3">
+            <div class="l-flajer">
+                <div class="l-flajer__pozadina l-flajer__pozadina--napred l-flajer__pozadina--napred-2">
+                    <div class="l-flajer__slika l-flajer__slika--2">
+                        <h1><b>OSNOVNI</b></h1>               
+                    </div>                         
+                    <div class="l-flajer__detalji">
+                        <ul>
+                            <li>10-20 dana izrade</li>
+                            <li>Do 15 stranica</li>
+                            <li>Responzivni dizajn</li>
+                            <li>Pokretni elementi</li>
+                            @*<li>Kontakt forma</li>
+                            <li>Skripte</li>*@
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-flajer__pozadina l-flajer__pozadina--nazad l-flajer__pozadina--nazad-2">
+                    <div class="l-flajer__opis">
+                        <div class="l-flajer__cena-box">
+                            <p class="l-flajer__cena-samo">Samo</p>
+                            <p class="l-flajer__cena-vrednost">155€</p>
+                        </div>
+                        <a href="#" class="dugme dugme--belo">Pogledaj primer</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        <div class="l-kol-1-od-3">
+            <div class="l-flajer">
+                <div class="l-flajer__pozadina l-flajer__pozadina--napred l-flajer__pozadina--napred-3">
+                    <div class="l-flajer__slika l-flajer__slika--3">
+                        <h1><b>PLUS</b></h1>
+                    </div>
+                    <div class="l-flajer__detalji">
+                        <ul>
+                            <li>30-45 dana izrade</li>
+                            <li>Do 30 stranica</li>
+                            <li>Responzivni dizajn</li>
+                            <li>Galerija</li>
+                            <li>Kontakt forma</li>
+                            <li>Skripte</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-flajer__pozadina l-flajer__pozadina--nazad l-flajer__pozadina--nazad-3">
+                    <div class="l-flajer__opis">
+                        <div class="l-flajer__cena-box">
+                            <p class="l-flajer__cena-samo">Samo</p>
+                            <p class="l-flajer__cena-vrednost">205€</p>
+                        </div>
+                        <a href="#" class="dugme dugme--belo">Pogledaj primer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="l-red">
+        <div class="l-sekcija l-sekcija-narandzasta">
+            <div class="l-red">
+                <h1 class="l-naslov-1">Specijalno!</h1>
+                <h1 class="l-naslov-2">Sajamska ponuda</h1>
+                <div class="l-kol-1-od-2">
+                    <div class="l-flajer">
+                        <div class="l-flajer__pozadina l-flajer__pozadina--napred l-flajer__pozadina--napred-1">
+                            <div class="l-flajer__slika l-flajer__slika--1 l-flajer__slika--spec1">
+                                <h1><b>MINI</b></h1>
+                            </div>
+                            <div class="l-flajer__detalji">
+                                <ul>
+                                    <li>7-10 dana izrade</li>
+                                    <li>Do 5 stranica</li>
+                                    <li>Responzivni dizajn</li>
+                                    @*<li>Galerija</li>
+                                    <li>Kontakt forma</li>
+                                    <li>Skripte</li>*@
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="l-flajer__pozadina l-flajer__pozadina--nazad l-flajer__pozadina--nazad-1">
+                            <div class="l-flajer__opis">
+                                <div class="l-flajer__cena-box">
+                                    <p class="l-flajer__cena-samo">Samo</p>
+                                    <p class="l-flajer__cena-vrednost">45€</p>
+                                </div>
+                                <a href="#" class="dugme dugme--belo dugme_animacija">Pogledaj primer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-kol-1-od-2">
+                    <div class="l-flajer">
+                        <div class="l-flajer__pozadina l-flajer__pozadina--napred l-flajer__pozadina--napred-2">
+                            <div class="l-flajer__slika l-flajer__slika--2 l-flajer__slika--spec2">
+                                <h1><b>OSNOVNI</b></h1>
+                            </div>
+                            <div class="l-flajer__detalji">
+                                <ul>
+                                    <li>10-20 dana izrade</li>
+                                    <li>Do 15 stranica</li>
+                                    <li>Responzivni dizajn</li>
+                                    <li>Pokretni elementi</li>
+                                    @*<li>Kontakt forma</li>
+                        <li>Skripte</li>*@
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="l-flajer__pozadina l-flajer__pozadina--nazad l-flajer__pozadina--nazad-2">
+                            <div class="l-flajer__opis">
+                                <div class="l-flajer__cena-box">
+                                    <p class="l-flajer__cena-samo">Samo</p>
+                                    <p class="l-flajer__cena-vrednost">155€</p>
+                                </div>
+                                <a href="#" class="dugme dugme--belo">Pogledaj primer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-@section scripts{    
-<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
-    }
+@*<div class="l-red">
+        <div class="l-kol-1-od-2">
+            1 od 2
+        </div>
+        <div class="l-kol-1-od-2">
+            1 od 2
+        </div>
+    </div>
 
+    <div class="l-red">
+        <div class="l-kol-1-od-3">
+            1 od 3
+        </div>
+        <div class="l-kol-1-od-3">
+            1 od 3
+        </div>
+        <div class="l-kol-1-od-3">
+            1 od 3
+        </div>
+    </div>
+
+    <div class="l-red">
+        <div class="l-kol-1-od-3">
+            1 od 3
+        </div>
+        <div class="l-kol-2-od-3">
+            2 od 3
+        </div>
+    </div>
+
+    <div class="l-red">
+        <div class="l-kol-1-od-4">
+            1 od 4
+        </div>
+        <div class="l-kol-1-od-4">
+            1 od 4
+        </div>
+        <div class="l-kol-1-od-4">
+            1 od 4
+        </div>
+        <div class="l-kol-1-od-4">
+            1 od 4
+        </div>
+    </div>
+
+    <div class="l-red">
+        <div class="l-kol-1-od-4">
+            1 od 4
+        </div>
+        <div class="l-kol-1-od-4">
+            1 od 4
+        </div>
+        <div class="l-kol-2-od-4">
+            2 od 4
+        </div>
+    </div>
+
+    <div class="l-red">
+        <div class="l-kol-1-od-4">
+            1 od 4
+        </div>
+        <div class="l-kol-3-od-4">
+            3 od 4
+        </div>
+    </div>*@
