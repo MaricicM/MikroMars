@@ -821,6 +821,49 @@ img.l-Logo {
         font-weight:100;        
     }
 }
+<<<<<<< HEAD
+||||||| merged common ancestors
+.SpecPonudaMini{
+     h1{
+            text-align:center;
+        }
+        img{
+            max-width:100%;
+        }
+        .col-md-4{
+            margin-bottom:20px;
+        }
+        #imagepreview{
+            width:unset !important;
+            height: unset !important;
+        }
+        .modal-dialog{
+            width: fit-content;
+        }
+}
+=======
+.SpecPonudaMini{
+     h1{
+            text-align:center;
+        }
+        img{
+            max-width:100%;
+        }
+        .col-md-4{
+            margin-bottom:20px;
+        }
+        #imagepreview{
+            width:unset !important;
+            height: unset !important;
+        }
+        .modal-dialog{
+            width: fit-content;
+        }
+        .row:last-child{
+            margin-bottom:$horizontalni_razmak;
+        }
+}
+>>>>>>> master
 
 // O NAMA
 

@@ -7,7 +7,24 @@
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
+<<<<<<< HEAD
     <ProjectView>ProjectFiles</ProjectView>
+||||||| merged common ancestors
+<<<<<<<<< Temporary merge branch 1
+    <ProjectView>ProjectFiles</ProjectView>
+||||||||| merged common ancestors
+    <ProjectView>ShowAllFiles</ProjectView>
+=========
+    <ProjectView>ShowAllFiles</ProjectView>
+    <WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
+    <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+>>>>>>>>> Temporary merge branch 2
+=======
+    <ProjectView>ShowAllFiles</ProjectView>
+    <WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
+    <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <ProjectView>ProjectFiles</ProjectView>
+>>>>>>> master
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
