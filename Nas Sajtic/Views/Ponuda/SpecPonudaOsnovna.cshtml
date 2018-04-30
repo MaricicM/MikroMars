@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "SpecPonuda";
+    ViewBag.Title = "SpecPonudaOsnovna";
 }
 <div class="SpecPonudaMini">
     <div class="container l-margina-gore-velika">
@@ -8,44 +8,46 @@
             <h1 class="l-naslov-1">Specijalna Sajamska Ponuda</h1>
             <hr />
             <h2 class="l-naslov-2">Za predstojeći Sajam "pitaćemo Boku kako se zove" smo pripremili dve posebne ponude: Mini i Osnovnu.</h2>
-            <h2 class="l-naslov-3-bela">Mini ponuda obuhvata sledeće:</h2>
+            <h2 class="l-naslov-3-bela">Osnovna ponuda obuhvata sledeće:</h2>
             <ul style="list-style-type:none;">
-                <li><h3 class="l-naslov-3-bela">Izradu sajta do 5 stranica</h3></li>
+                <li><h3 class="l-naslov-3-bela">Izradu sajta do 15 stranica</h3></li>
                 <li><h3 class="l-naslov-3-bela">Responzivni dizajn (obezbedjuje dobar izgled stranice na svim ekranima)</h3></li>
                 <li><h3 class="l-naslov-3-bela">Kontakt formu</h3></li>
                 <li><h3 class="l-naslov-3-bela">Linkove na društvene mreže</h3></li>
+                <li><h3 class="l-naslov-3-bela">Galeriju</h3></li>
+                <li><h3 class="l-naslov-3-bela">Slajdere</h3></li>
             </ul>
         </div><br />
-<h1 class="l-naslov-2">Ideje za Vaš novi sajt:</h1>
+        <h1 class="l-naslov-2">Ideje za Vaš novi sajt:</h1>
         <div class="row l-margina-gore-mala l-margina-dole-velika">
             <div class="col-md-4">
                 <a href="#" id="pop1">
-                    <img id="imageresource1" src="~/Content/Images/Spec/SpecMini1.jpg" />
+                    <img id="imageresource1" src="~/Content/Images/Spec/SpecOsnovna1.jpg" />
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="#" id="pop2">
-                    <img id="imageresource2" src="~/Content/Images/Spec/SpecMini2.jpg" />
+                    <img id="imageresource2" src="~/Content/Images/Spec/SpecOsnovna2.jpg" />
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="#" id="pop3">
-                    <img id="imageresource3" src="~/Content/Images/Spec/SpecMIni3.jpg" />
+                    <img id="imageresource3" src="~/Content/Images/Spec/SpecOsnovna3.jpg" />
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="#" id="pop4">
-                    <img id="imageresource4" src="~/Content/Images/Spec/SpecMini4.jpg" />
+                    <img id="imageresource4" src="~/Content/Images/Spec/SpecOsnovna4.jpg" />
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="#" id="pop5">
-                    <img id="imageresource5" src="~/Content/Images/Spec/SpecMini5.jpg" />
+                    <img id="imageresource5" src="~/Content/Images/Spec/SpecOsnovna5.jpg" />
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="#" id="pop6">
-                    <img id="imageresource6" src="~/Content/Images/Spec/SpecMini6.jpg" />
+                    <img id="imageresource6" src="~/Content/Images/Spec/SpecOsnovna6.jpg" />
                 </a>
             </div>
         </div>
@@ -74,28 +76,28 @@
     <script>
         $("#pop1").on("click", function () {
             $('#imagepreview').attr('src', $('#imageresource1').attr('src'));
-            $('#imagemodal').modal('show'); 
+            $('#imagemodal').modal('show');
         });
         $("#pop2").on("click", function () {
-            $('#imagepreview').attr('src', $('#imageresource2').attr('src')); 
-            $('#imagemodal').modal('show'); 
+            $('#imagepreview').attr('src', $('#imageresource2').attr('src'));
+            $('#imagemodal').modal('show');
         });
         $("#pop3").on("click", function () {
-            $('#imagepreview').attr('src', $('#imageresource3').attr('src')); 
-            $('#imagemodal').modal('show'); 
+            $('#imagepreview').attr('src', $('#imageresource3').attr('src'));
+            $('#imagemodal').modal('show');
         });
         $("#pop4").on("click", function () {
-            $('#imagepreview').attr('src', $('#imageresource4').attr('src')); 
-            $('#imagemodal').modal('show'); 
+            $('#imagepreview').attr('src', $('#imageresource4').attr('src'));
+            $('#imagemodal').modal('show');
         });
         $("#pop5").on("click", function () {
-            $('#imagepreview').attr('src', $('#imageresource5').attr('src')); 
+            $('#imagepreview').attr('src', $('#imageresource5').attr('src'));
             $('#imagemodal').modal('show');
         });
         $("#pop6").on("click", function () {
-            $('#imagepreview').attr('src', $('#imageresource6').attr('src')); 
+            $('#imagepreview').attr('src', $('#imageresource6').attr('src'));
             $('#imagemodal').modal('show');
         });
     </script>
-    }
+}
 

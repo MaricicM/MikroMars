@@ -17,6 +17,11 @@ namespace Nas_Sajtic.Controllers
         {
             return View();
         }
+
+        public ActionResult SpecPonudaOsnovna()
+        {
+            return View();
+        }
         public PartialViewResult _Ponuda1()
         {
             return PartialView();

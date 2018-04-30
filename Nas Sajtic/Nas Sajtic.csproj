@@ -256,6 +256,12 @@
     <Content Include="Content\Images\Spec\SpecMini4.jpg" />
     <Content Include="Content\Images\Spec\SpecMini5.jpg" />
     <Content Include="Content\Images\Spec\SpecMini6.jpg" />
+    <Content Include="Content\Images\Spec\SpecOsnovna1.jpg" />
+    <Content Include="Content\Images\Spec\SpecOsnovna2.jpg" />
+    <Content Include="Content\Images\Spec\SpecOsnovna3.jpg" />
+    <Content Include="Content\Images\Spec\SpecOsnovna4.jpg" />
+    <Content Include="Content\Images\Spec\SpecOsnovna5.jpg" />
+    <Content Include="Content\Images\Spec\SpecOsnovna6.jpg" />
     <Content Include="Content\Images\Video\Clouds_Fly_By.mp4" />
     <Content Include="Content\Images\Video\Clouds_Fly_By.webm" />
     <Content Include="Content\Images\Video\Love-Coding.mp4" />
@@ -342,6 +348,7 @@
     <Content Include="Views\Home\Kontakt.cshtml" />
     <Content Include="Views\Home\RadoviUToku.cshtml" />
     <Content Include="Views\Ponuda\SpecPonudaMini.cshtml" />
+    <Content Include="Views\Ponuda\SpecPonudaOsnovna.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
