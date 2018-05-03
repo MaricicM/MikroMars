@@ -244,6 +244,8 @@
     <Content Include="Content\Images\logo\mm-logo-znak.png" />
     <Content Include="Content\Images\logo\mm-logo.png" />
     <Content Include="Content\Images\logo\mm_logo.jpg" />
+    <Content Include="Content\Images\Milos.jpg" />
+    <Content Include="Content\Images\Mirko.jpg" />
     <Content Include="Content\Images\office-free-for-android.png" />
     <Content Include="Content\Images\Phone.png" />
     <Content Include="Content\Images\pustanje-sajta-online.png" />
