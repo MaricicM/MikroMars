@@ -1,8 +1,8 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="container index">
-    <div class="row" style="width:100%;height:200px;">
+<div class="container index" id="test">
+    <div class="row" style="width:100%;">
         <div class="col-sm-offset-2 col-sm-8" style="position:relative;">
 
             <span id="sp1" class="sp1">Brza izrada</span>
@@ -28,10 +28,11 @@
             <span id="sp201" class="sp3">Povoljne</span>
             <span id="sp202" class="sp4">Cene</span>
 
-            <img class="logo img" src="~/Content/Images/logo/mm-logo-tekst.png" style="max-width:30em;" />            
-        </div>
+            <img class="logo img" src="~/Content/Images/logo/mm-logo-tekst.png" style="max-width:30em;" />     
+            <hr /> 
+        </div>  
     </div><br /><br />
-    <div class="row" style="position:relative; height:500px;">
+    <div class="row" style="position:relative; height:500px;">        
         <img class="laptop img" src="~/Content/Images/LapTop.png" />
         <img class="fon img" src="~/Content/Images/Phone.png" />
         <img class="tablet img" src="~/Content/Images/office-free-for-android.png" />
@@ -50,36 +51,53 @@
                 </p>
             </div>
             <div class="l-row-right">
-                <img class="imag" src="~/Content/Images/gif/123.gif" style="height:200px;float:right;" />
+                <img class="imag" src="~/Content/Images/gif/123.gif"/>
             </div>
         </div>
     </div>
-    <h4>POVERITE NAM IZRADU VAŠEG SAJTA I UVERITE SE U KVALITET I PROFESIONALNI ODNOS PREMA NAŠIM KLIJENTIMA</h4> 
-      <div class="l-row"></div>
-    <div class="l-proces">        
+    <h4>POVERITE NAM IZRADU VAŠEG SAJTA I UVERITE SE U KVALITET I PROFESIONALNI ODNOS PREMA NAŠIM KLIJENTIMA</h4>       
+    <div class="l-proces" id="proces">        
         <div class="l-proces-row">
             <div class="l-proces-img">
-                <img src="~/Content/Images/razgovor-o-sajtu-1.png" />
+                <a href="#popap"><img src="~/Content/Images/razgovor-o-sajtu-1.png" /></a>
                 <h5>UPOZNAVANJE</h5>
                 <p>Da bi našli najbolje rešenje za vaš sajt moramo se upoznati i sa vašim poslom, koji su vam ciljevi i zadaci.</p>
             </div>
             <div class="l-proces-img">
-                <img src="~/Content/Images/dizajn-sajta-1.png" />
+                <a href="#popap"><img src="~/Content/Images/dizajn-sajta-1.png" /></a>
                 <h5>DIZAJN SAJTA</h5>
                 <p>Dogovor sa vama oko dizajna sajta, vašim željama oko izgleda i funkcionalnosti sajta, bojama…</p>
             </div>
             <div class="l-proces-img">
-                <img src="~/Content/Images/kodiranje-sajta.png" />
+                <a href="#popap"><img src="~/Content/Images/kodiranje-sajta.png" /></a>
                 <h5>IZRADA SAJTA</h5>
                 <p>Sam proces izrade sajta, optimizacija za pretragu kao i optimizacija sajta za mobilne telefone.</p>
             </div>
             <div class="l-proces-img">
-                <img src="~/Content/Images/pustanje-sajta-online.png" />
+                <a href="#popap"><img src="~/Content/Images/pustanje-sajta-online.png" /></a>
                 <h5>POSTAVLJANJE ON-LINE</h5>
                 <p>Pošto se sajt uradi, postavlja se online, izvode se poslednje provere da sve radi perfektno i bez greške.</p>                
             </div>
         </div>
-    </div> 
+    </div>    
+</div>
+
+<div class="popap" id="popap">
+    <div class="popap__sadrzaj">
+        <div class="popap__levo">
+            <img class="popap__slika" src="~/Content/Images/izrada-sajta-saljder-1-680x350.jpg" alt=""/>
+            <img class="popap__slika" src="~/Content/Images/izrada-e-shopa-680x350.jpg" alt=""/>
+        </div>
+        <div class="popap__desno">
+            <a href="#proces" class="popap__zatvoren"><i class="fas fa-times"></i></a>
+            <h2 class="l-naslov-2 l-margina-dole-mala">Da vidimo sta je ovo</h2>
+            <h3 class="l-naslov-3-narandzasta l-margina-dole-mala">Važno &ndash; Molimo pročitaj</h3>
+            <p class="popap__tekst">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <a href="#" class="dugme dugme--plavo">U redu</a>
+        </div>
+    </div>
 </div>
 
 @section scripts{
@@ -139,7 +157,6 @@
             $('#sp110').delay(450).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 600, function () {
                 $(this).addClass('fadeOut');
             });
-
             $('#sp111').delay(500).animate({ top: 110 }, 700, 'linear').animate({ top: 60 }, 500).delay(100).animate({ top: 100 }, 500, 'linear').animate({ top: 100 }, 500, function () {
                 $(this).addClass('fadeOut');
             });

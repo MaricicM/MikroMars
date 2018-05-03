@@ -2,8 +2,77 @@
 @{
     ViewBag.Title = "Kontakt";
 }
+<<<<<<< HEAD
 
 <div class="l-sekcija">
     <h2>Kontakt</h2>
+=======
+@*<div class="l-sekcija">
+    <div class="l-red">
+        <form action="/Home/SendMessage" method="post">
+            @Html.AntiForgeryToken()
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Name">Ime:</label>
+                    <div class="col-md-4">
+                        <input placeholder="Unesite ime..." autofocus class="form-control text-box single-line" data-val="true" data-val-length="Unesite ime do 50 slova." data-val-length-max="50" id="Name" name="Name" type="text" value="@Model.Name" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Email">E-mail:</label>
+                    <div class="col-md-4">
+                        <input placeholder="Unesite e-mail..." class="form-control text-box single-line" data-val="true" data-val-email="Niste uneli valudnu e-mail adresu." data-val-required="Niste uneli e-mail." id="Email" name="Email" type="email" value="@Model.Email" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="Message">Postavite pitanje</label>
+                    <div class="col-md-8">
+                        <textarea placeholder="Postavite pitanje..." rows="10" class="form-control text-box" data-val="true" data-val-required="Niste postavili pitanje." id="Message" name="Message">@Model.Message</textarea>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Pošalji" class="dugme" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>*@
+
+<div class="l-kontakt">
+    <div class="l-red">
+        <div class="l-forma">
+            <div class="l-forma__def">
+                <form class="forma" action="/Home/SendMessage" method="post">
+                    <div class="ta-center l-margina-dole-mala">
+                        <h2 class="l-naslov-2 l-naslov-2-plava l-naslov-2-animacija-2">
+                            kontaktirajte nas
+                        </h2>
+                    </div>
+                    <div class="forma__sadrzaj">
+                        <input type="text" class="forma__input" placeholder="Puno ime" id="Name" name="Name" required value="@Model.Name" />
+                        <label for="Name" class="forma__label">Puno ime</label>
+                    </div>
+                    <div class="forma__sadrzaj">
+                        <input type="email" class="forma__input" placeholder="E-mail adresa" id="Email" name="Email" required value="@Model.Email"/>
+                        <label for="Email" class="forma__label">E-mail adresa</label>
+                    </div>
+                    <div class="forma__sadrzaj">
+                        <textarea placeholder="Postavite pitanje..." rows="5" class="forma__poruka" id="Message" name="Message" required>@Model.Message</textarea>
+                        <label for="Message" class="forma__label">Pitanje</label>
+                    </div>
+                    <div class="forma__sadrzaj">
+                        <input type="submit" value="Pošalji" class="dugme" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+>>>>>>> bb7875caeca5baff4da9d269f699d854b5750c6f
 </div>
 
