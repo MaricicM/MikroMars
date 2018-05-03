@@ -36,9 +36,40 @@
         <img class="fon img" src="~/Content/Images/Phone.png" />
         <img class="tablet img" src="~/Content/Images/office-free-for-android.png" />
         <img class="gif img" src="~/Content/Images/gif/giphy2.gif" />
-    </div>        
+    </div>
+    <div class="l-astal"></div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="demo">
+                <div class="item">
+                    <ul id="content-slider" class="content-slider">
+                        <li class="zumOut">
+                            <img src="~/Content/Images/izrada-e-shopa-680x350.jpg" />
+                            <span>Izrada Inrenet Prodavnice</span>
+                        </li>
+                        <li class="zumOut prvi">
+                            <img src="~/Content/Images/izrada-sajta-saljder-1-680x350.jpg" />
+                            <span>Održavanje sajtova</span>
+                        </li>
+                        <li class="zumOut">
+                            <img src="~/Content/Images/izrada-sajtova-680x350.jpg" />
+                            <span>Izrada Web Stranica</span>
+                        </li>
+                        <li class="zumOut">
+                            <img src="~/Content/Images/redizajn-sajtova-680x350.jpg" />
+                            <span>Redizajn Sajtova</span>
+                        </li>
+                        <li class="zumOut">
+                            <img src="~/Content/Images/web-dizajn-680x350.jpg" />
+                            <span>Web Dizajn</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>       
 </div>
-<div class="l-astal"></div>
 <div class="l-wrapper">        
     <div class="l-container">
         <div class="l-row">
@@ -65,17 +96,17 @@
             </div>
             <div class="l-proces-img">
                 <img src="~/Content/Images/dizajn-sajta-1.png" />
-                <h5>DIZAJN SAJTA</h5>
+                <h5>IZGLED SAJTA</h5>
                 <p>Dogovor sa vama oko dizajna sajta, vašim željama oko izgleda i funkcionalnosti sajta, bojama…</p>
             </div>
             <div class="l-proces-img">
                 <img src="~/Content/Images/kodiranje-sajta.png" />
-                <h5>IZRADA SAJTA</h5>
+                <h5>NAŠA POSLA</h5>
                 <p>Sam proces izrade sajta, optimizacija za pretragu kao i optimizacija sajta za mobilne telefone.</p>
             </div>
             <div class="l-proces-img">
                 <img src="~/Content/Images/pustanje-sajta-online.png" />
-                <h5>POSTAVLJANJE ON-LINE</h5>
+                <h5>POKRETANJE SAJTA</h5>
                 <p>Pošto se sajt uradi, postavlja se online, izvode se poslednje provere da sve radi perfektno i bez greške.</p>                
             </div>
         </div>
@@ -89,7 +120,34 @@
             $('.laptop, .fon, .tablet, .gif').addClass('opaque');
         });
 
+        $("#content-slider").lightSlider({                
+            item: 3,
+            auto: true,
+            loop: true,
+            pauseOnHover: true,
+            pause: 4000,
+            speed: 800,
+            slideMargin: 0,
+            controls: false,
+            enableDrag: false,
+            freeMove: false,
 
+            onBeforeStart: function (el) {
+                $('.prvi').addClass('zumIn');
+            },
+            onBeforeSlide: function (el) {
+                $('.active').next().removeClass('zumIn');
+                if ($('.active').next().next().hasClass('prvi')) {
+                    $('.prvi').addClass('zumIn');
+                }
+                $('.active').next().next().addClass('zumIn');
+            },
+            onAfterSlide: function (el) {
+                if ($('.active').hasClass('prvi')) {
+                    $('.prvi').removeClass('zumIn');
+                }                    
+            }
+        });
 
         $('#sp1').delay(100).animate({ left: 150 }, 1200).delay(500).animate({ left: -50 }, 500).animate({ left: 1500 }, 1000, function () {
             var div = document.getElementById("sp1");
