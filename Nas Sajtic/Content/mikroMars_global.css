@@ -7,8 +7,8 @@
 
 /*
 0 - 600px:      Mobilni
-600 - 900px:    Tablet (portret)
-900 - 1200px:   Tablet (lendskejp)
+600 - 900px:    Tablet (port)
+900 - 1200px:   Tablet (lend)
 [1200 - 1800px] su normalni stilovi
 1800px +:       Veliki ekrani
 */
@@ -30,6 +30,9 @@ body {
   box-sizing: border-box !important; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: "Russo One", sans-serif !important; }
+  @media (max-width: 37.5em) {
+    body {
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 5%, rgba(122, 207, 239, 0.4)); } }
 
 html {
   font-size: 62.5%; }
@@ -47,7 +50,13 @@ html {
       font-size: 75% !important; } }
 
 .imag {
-  opacity: 1 !important; }
+  opacity: 1 !important;
+  height: 200px;
+  float: right; }
+  @media (max-width: 37.5em) {
+    .imag {
+      float: none;
+      margin: 0 auto; } }
 
 img.l-Logo {
   margin-top: 1rem;
@@ -59,7 +68,16 @@ img.l-Logo {
     margin-bottom: 1rem;
     position: absolute;
     height: 7rem;
-    transition: all .3s; }
+    transition: all .3s;
+    position: fixed;
+    z-index: 1600;
+    left: 10%; }
+    @media (max-width: 37.5em) {
+      img.l-Logo-header {
+        opacity: 0;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
     img.l-Logo-header:hover {
       transform: scale(1.2); }
   img.l-Logo-footer {
@@ -295,6 +313,14 @@ input[type=submit] {
     .l-container .l-row .l-row-right {
       flex: 1;
       padding: 1rem; }
+    @media (max-width: 37.5em) {
+      .l-container .l-row {
+        background: #d3d3d3;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 2rem; }
+        .l-container .l-row img {
+          padding: 0; } }
   .l-container h4 {
     margin-top: .16rem; }
 
@@ -320,6 +346,10 @@ input[type=submit] {
         font-weight: 100; }
       .l-proces .l-proces-row .l-proces-img p {
         margin-top: .16rem; }
+    @media (max-width: 37.5em) {
+      .l-proces .l-proces-row {
+        margin: 0 auto;
+        flex-direction: column; } }
 
 .l-wrapper {
   left: 0;
@@ -419,11 +449,15 @@ input[type=submit] {
   width: 4rem;
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
   z-index: 600;
   text-align: center;
   cursor: pointer;
   display: none; }
+  @media (max-width: 37.5em) {
+    .l-nav__dugme {
+      display: inline-block;
+      top: .5rem; } }
 
 .l-nav__pozadina {
   position: fixed;
@@ -434,9 +468,16 @@ input[type=submit] {
   width: 100%;
   z-index: 500;
   background-image: linear-gradient(to right bottom, #e2e2e2, #d3d3d3);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   backface-visibility: hidden;
   transition: all .8s ease-in-out; }
+  @media (max-width: 37.5em) {
+    .l-nav__pozadina {
+      opacity: 0;
+      transform: scale(80);
+      height: 100vh;
+      backface-visibility: hidden;
+      background-image: linear-gradient(to right bottom, #7acfef, #49a9ce);
+      visibility: hidden; } }
 
 .l-nav__nav {
   height: 20vh;
@@ -447,6 +488,17 @@ input[type=submit] {
   backface-visibility: hidden;
   width: 130%;
   transition: all .5s ease-in; }
+  @media (max-width: 37.5em) {
+    .l-nav__nav {
+      visibility: hidden;
+      opacity: 0;
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; } }
+  @media (max-width: 65.25em) {
+    .l-nav__nav {
+      width: 120%; } }
 
 .l-nav__lista {
   position: absolute;
@@ -456,10 +508,23 @@ input[type=submit] {
   list-style: none;
   width: 100%;
   padding-left: 50%; }
+  @media (max-width: 37.5em) {
+    .l-nav__lista {
+      position: absolute;
+      top: 50%;
+      left: 50%; } }
+  @media (max-width: 65.25em) {
+    .l-nav__lista {
+      position: absolute;
+      top: 15%;
+      left: 50%; } }
 
 .l-nav__stavke {
   margin: 1rem auto;
   float: left; }
+  @media (max-width: 37.5em) {
+    .l-nav__stavke {
+      float: none; } }
 
 .l-nav__link:link, .l-nav__link:visited {
   display: inline-block;
@@ -473,11 +538,14 @@ input[type=submit] {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 250%;
   transition: all .5s; }
+  @media (max-width: 37.5em) {
+    .l-nav__link:link, .l-nav__link:visited {
+      font-size: 3rem; } }
 
 .l-nav__link:hover, .l-nav__link:active {
   background-position: 100%;
   color: #ff6a00;
-  transform: translateY(0.5rem); }
+  transform: translateX(0.5rem); }
 
 .l-nav__link--logo {
   height: 5rem;
@@ -485,11 +553,13 @@ input[type=submit] {
 
 .l-nav__checkbox:checked ~ .l-nav__pozadina {
   opacity: 1;
-  transform: scaleX(80) scaleY(1); }
+  transform: scaleX(50) scaleY(1);
+  visibility: visible; }
 
 .l-nav__checkbox:checked ~ .l-nav__nav {
   opacity: 1;
-  width: 115%; }
+  width: 100%;
+  visibility: visible; }
 
 .l-nav__ikona {
   position: relative;
@@ -508,6 +578,13 @@ input[type=submit] {
     top: -.8rem; }
   .l-nav__ikona::after {
     top: .8rem; }
+  @media (max-width: 37.5em) {
+    .l-nav__ikona {
+      margin: 2px auto; }
+      .l-nav__ikona::before {
+        top: -.7rem; }
+      .l-nav__ikona::after {
+        top: .7rem; } }
 
 .l-nav__dugme:hover .l-nav__ikona:before {
   top: -.9rem; }
@@ -654,9 +731,16 @@ input[type=submit] {
   .popap__zatvoren:hover {
     color: #3c85b2; }
 
+@media (max-width: 37.5em) {
+  #test {
+    display: none; } }
+
 .l-sekcija {
   background-repeat: no-repeat;
   padding: 10rem 0 20rem 0; }
+  @media (max-width: 37.5em) {
+    .l-sekcija {
+      background-image: linear-gradient(to right bottom, #7acfef, #49a9ce); } }
   .l-sekcija-bela {
     background-color: #fff;
     padding: 4rem; }
@@ -684,6 +768,10 @@ input[type=submit] {
         margin-bottom: 2rem !important; } }
   @media (max-width: 65.25em) {
     .l-red {
+      max-width: 50% !important;
+      padding: 0 1rem; } }
+  @media (max-width: 37.5em) {
+    .l-red {
       max-width: 50rem !important;
       padding: 0 1rem; } }
   .l-red::after {
@@ -696,8 +784,15 @@ input[type=submit] {
       margin-right: 4rem; }
       @media (max-width: 65.25em) {
         .l-red [class^="l-kol-"]:not(:last-child) {
+          margin-right: 5% !important; } }
+      @media (max-width: 37.5em) {
+        .l-red [class^="l-kol-"]:not(:last-child) {
           margin-right: 0 !important; } }
     @media (max-width: 65.25em) {
+      .l-red [class^="l-kol-"] {
+        width: 50rem !important;
+        margin-bottom: 2rem; } }
+    @media (max-width: 37.5em) {
       .l-red [class^="l-kol-"] {
         width: 100% !important;
         margin-bottom: 2rem; } }

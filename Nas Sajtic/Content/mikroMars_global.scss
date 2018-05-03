@@ -78,8 +78,8 @@ $slika-2: linear-gradient(to bottom, rgba($boja_bela, 0.80), rgba($boja_crna, 0.
 // RESPONZIV
 /*
 0 - 600px:      Mobilni
-600 - 900px:    Tablet (portret)
-900 - 1200px:   Tablet (lendskejp)
+600 - 900px:    Tablet (port)
+900 - 1200px:   Tablet (lend)
 [1200 - 1800px] su normalni stilovi
 1800px +:       Veliki ekrani
 */
@@ -108,7 +108,6 @@ $slika-2: linear-gradient(to bottom, rgba($boja_bela, 0.80), rgba($boja_crna, 0.
 
 // GLOBAL
 
-
 *,
 *::after,
 *::before{
@@ -127,6 +126,9 @@ body {
     box-sizing:border-box!important;
     h1,h2,h3,h4,h5,h6{
         font-family:$secondary-font!important;
+    }
+    @include responziv(mob){
+        background-image:linear-gradient(to bottom, rgba($boja_bela, 0.9) 5%, rgba($boja_svetlo_plava, 0.4));  
     }
 }
 html{
@@ -147,6 +149,12 @@ html{
 }
 .imag {
     opacity: 1 !important;
+    height:200px;
+    float:right;
+    @include responziv(mob){
+        float:none;
+        margin:0 auto;
+    }
 }
 img.l-Logo {    
     margin-top: 1rem;
@@ -161,7 +169,15 @@ img.l-Logo {
         position:absolute;
         height: 7rem;
         transition:all .3s;
-
+        position:fixed;
+        z-index:1600;
+        left:10%;
+        @include responziv(mob){
+            opacity:0;
+            top:5%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }  
         &:hover{
         transform:scale(1.2);
     }
@@ -452,7 +468,16 @@ input[type=submit]{
         .l-row-right {
             flex: 1;
             padding: 1rem;
-        }        
+        }     
+        @include responziv(mob){
+            background: $boja_medium_siva;
+            flex-direction:column;
+            margin:0 auto;
+            padding:2rem;
+            img{
+                padding:0;
+            }
+        }   
     }    
     h4{
         margin-top:.16rem;
@@ -483,6 +508,10 @@ input[type=submit]{
             p{
                 margin-top:.16rem;
             }
+        }
+        @include responziv(mob){
+            margin:0 auto;
+            flex-direction:column;
         }
     }  
 } // < -- FLEX
@@ -618,11 +647,15 @@ input[type=submit]{
         width:4rem;
         position:fixed;
         top:1rem;
-        left:1rem;
+        right:1rem;
         z-index:600;
         text-align:center;
         cursor:pointer;
         display:none;
+         @include responziv(mob){
+            display:inline-block;
+            top: .5rem;
+        }
     }
     &__pozadina{
         position:fixed;
@@ -633,11 +666,18 @@ input[type=submit]{
         width:100%;
         z-index:500;
         background-image:$sivi_gradient;
-        box-shadow:$senka;
+        //box-shadow:$senka;
         backface-visibility:hidden;
         transition: all .8s ease-in-out;
-        //opacity:0;
-        //transform: scale(80);
+        
+        @include responziv(mob){
+            opacity:0;
+            transform: scale(80);
+            height:100vh;
+            backface-visibility:hidden;
+            background-image:$plavi_logo_gradient;
+            visibility:hidden;
+        }
     }
     &__nav{
         height:20vh;
@@ -650,6 +690,17 @@ input[type=submit]{
         //opacity:0;
         width:130%;
         transition: all .5s ease-in;
+        @include responziv(mob){
+            visibility:hidden;
+            opacity:0;
+            height:100vh;
+            width:100%;
+            margin:0 auto;
+            text-align:center;
+        }
+        @include responziv(tab-por){
+            width:120%;
+        }
     }
     &__lista{
         position:absolute;
@@ -658,11 +709,24 @@ input[type=submit]{
         transform:translate(-50%, -50%);
         list-style:none;
         width:100%;   
-        padding-left:50%;     
+        padding-left:50%;    
+        @include responziv(mob){
+            position:absolute;
+            top:50%;
+            left:50%;
+        } 
+        @include responziv(tab-por){
+            position:absolute;
+            top:15%;
+            left:50%;
+        } 
     }
     &__stavke{
         margin: 1rem auto;
         float:left;
+        @include responziv(mob){
+            float:none;
+        }
     }
     &__link{
         &:link, &:visited{
@@ -677,11 +741,14 @@ input[type=submit]{
             background-image:linear-gradient(120deg, transparent 0%, transparent 50%, $boja_bela 50%);
             background-size:250%;
             transition:all .5s;
+            @include responziv(mob){
+                font-size:3rem;
+            } 
         }
         &:hover, &:active{
             background-position:100%;
             color:$boja_logo_narandzasta;
-            transform: translateY(.5rem);
+            transform: translateX(.5rem);
         }
         &--logo{
             height:5rem;
@@ -690,11 +757,13 @@ input[type=submit]{
     }
     &__checkbox:checked ~ &__pozadina{
         opacity:1;
-        transform:scaleX(80) scaleY(1);
+        transform:scaleX(50) scaleY(1);
+        visibility:visible;
     }
     &__checkbox:checked ~ &__nav{
         opacity:1;
-        width:115%;
+        width:100%;
+        visibility:visible;
     }
     &__ikona{
         position:relative;
@@ -713,6 +782,11 @@ input[type=submit]{
         }
         &::before{top:-.8rem;}
         &::after{top:.8rem;}
+        @include responziv(mob){
+            &::before{top:-.7rem;}
+            &::after{top:.7rem;}
+            margin:2px auto;
+        }
     }
     &__dugme:hover &__ikona:before{
         top:-.9rem;
@@ -894,12 +968,20 @@ input[type=submit]{
         }
     }
 }
+#test{
+    @include responziv(mob){
+        display:none;
+    }
+}
 
 // GALERY
 .l-sekcija{
     //background-image:linear-gradient(to bottom, rgba($boja_bela, 0.80), rgba($boja_crna, 0.63)), url(Images/hero.jpg);
     background-repeat:no-repeat;
     padding:10rem 0 20rem 0;
+    @include responziv(mob){
+        background-image:$plavi_logo_gradient;
+    }
     
     &-bela{
         background-color:$boja_bela;
@@ -936,6 +1018,10 @@ input[type=submit]{
     }
 
     @include responziv(tab-por){
+         max-width:50% !important;
+         padding:0 1rem;
+    }
+    @include responziv(mob){
          max-width:50rem !important;
          padding:0 1rem;
     }
@@ -943,16 +1029,23 @@ input[type=submit]{
     @include clearfix;
 
     [class^="l-kol-"]{
-        float:left;
+        float:left;        
         &:not(:last-child){
             margin-right:$horizontalni_razmak;
 
              @include responziv(tab-por){
-                margin-right:0!important;
+                margin-right:5% !important;
+            }
+             @include responziv(mob){
+                margin-right:0 !important;
             }
         }
 
         @include responziv(tab-por){
+            width:50rem!important;
+            margin-bottom:$vertikalni_razmak-mali;
+        }
+        @include responziv(mob){
             width:100%!important;
             margin-bottom:$vertikalni_razmak-mali;
         }
@@ -1326,7 +1419,6 @@ input[type=submit]{
 }
 
 // O NAMA
-
 .l-onama{
     position:relative;
     padding: 10rem 0 15rem 0;
@@ -1431,7 +1523,6 @@ input[type=submit]{
     }
 
 // KONTAKT
-
 .l-kontakt{
     padding:10rem 0;
     background-image:$plavi_logo_gradient;
@@ -1551,7 +1642,6 @@ input[type=submit]{
 }
 
 // ANIMACIJA
-
 @keyframes sLevaNaDesno{
     0%{
         opacity:0;
@@ -1606,7 +1696,6 @@ input[type=submit]{
 }
 
 // VIDEO
-
 .l-bg-video{
     position:absolute;
     top:0;
