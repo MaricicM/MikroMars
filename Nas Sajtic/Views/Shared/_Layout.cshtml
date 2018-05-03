@@ -11,14 +11,32 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top l-navbar-color">
+    <div class="l-nav">
+        <input class="l-nav__checkbox" type="checkbox" id="nav-toggle" />
+        <label class="l-nav__dugme" for="nav-toggle">
+            <span class="l-nav__ikona"></span>
+        </label>
+        <a href="/Home/Index"><img src="~/Content/Images/logo/mm-logo-znak.png" class="l-Logo-header"/></a>
+        <div class="l-nav__pozadina"></div>
+        <nav class="l-nav__nav">
+            <ul class="l-nav__lista">
+                <li class="l-nav__stavke"><a class="l-nav__link" href="/Home/Index"><i class="fas fa-home"></i></a></li>
+                <li class="l-nav__stavke"><a class="l-nav__link" href="/Home/Galerija">Galerija</a></li>
+                <li class="l-nav__stavke"><a class="l-nav__link" href="/Ponuda/Ponuda">Ponuda</a></li>
+                <li class="l-nav__stavke"><a class="l-nav__link" href="/Home/ONama">O nama</a></li>
+                <li class="l-nav__stavke"><a class="l-nav__link" href="/Home/Kontakt">Kontakt</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    @*<div class="navbar navbar-inverse navbar-fixed-top l-navbar-color">
         <div class="container">
             <div class="l-navbar">
                 <div class="l-navbar-left">
                     <a href="/Home/Index"><img src="~/Content/Images/logo/mm-logo-znak.png" class="l-Logo-header" /></a>
                 </div>
                <div class="l-navbar-middle">
-                   <div class="navbar-header">
+                   <div>
                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                            <span class="icon-bar"></span>
                            <span class="icon-bar"></span>
@@ -32,20 +50,20 @@
                            <li><a class="as" href="/Home/ONama">O nama</a></li>
                            <li><a class="as" href="/Home/Kontakt">Kontakt</a></li>
                        </ul>
-                       @*@Html.Partial("_LoginPartial")*@
+                       @Html.Partial("_LoginPartial")
                    </div>
                </div>
                 <div class="l-navbar-right"></div>
             </div>
         </div>
-    </div>
+    </div>*@
     <div style="overflow:hidden;">
         @RenderBody()
     </div>
     <footer class="l-custom-footer">
         <div class="container">
             <div class="row row-wrap">
-                <div class="col-md-4">                    
+                <div class="col-md-4 col-xs-12">                    
                     <div>
                         <a href="/Home/Index">
                             <img class="l-Logo-footer" src="~/Content/Images/logo/mm-logo-negativ.png" height="30" alt="MikroMars" title="MikroMars Logo" /><br />
@@ -56,18 +74,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" style="">
+                <div class="col-md-5 col-xs-12">
                     <ul class="l-footer-ul">
+<<<<<<< HEAD
                         <li><a href="/Home/ONama">O nama</a></li>
                         <li><a href="/Home/Index">Početna</a></li>
                         <li><a href="/Home/Galerija">Galerija</a></li>
+<<<<<<< HEAD
                         <li><a href="/Ponuda/Ponuda">Ponuda</a></li>
+=======
+                        <li><a href="/Home/Ponuda">Ponuda</a></li>
+=======
+                        <li style="float:left;margin-right:1rem;margin-left:1rem;"><a href="/Home/Index">Početna</a></li>
+                        <li style="float:left;margin-right:1rem;margin-left:1rem;"><a href="/Home/Galerija">Galerija</a></li>
+                        <li style="float:left;margin-right:1rem;margin-left:1rem;"><a href="/Ponuda/Ponuda">Ponuda</a></li>
+                        <li style="float:left;margin-right:1rem;margin-left:1rem;"><a href="/Home/ONama">O nama</a></li>
+                        <li style="float:left;margin-right:1rem;margin-left:1rem;"><a href="/Home/Kontakt">Kontakt</a></li>
+>>>>>>> bb7875caeca5baff4da9d269f699d854b5750c6f
+>>>>>>> mikro
                     </ul>
                 </div>
-                <div class="col-md-4" style="text-align:right;">
-                    <p><b>KONTAKT</b>:</p>
+                <div class="col-md-3 col col-xs-12" style="text-align:right;">
                     <p><strong>Miloš Maričić</strong> - 0123456789</p>
                     <p><strong>Mirko Lišanin</strong> - 0123456789</p>
+                    <p><a href="mailto:MikroMarsBg@gmail.com">MikroMarsBg@gmail.com</a></p>
                 </div>
             </div>
             <hr style="color:gray;border:0.5px solid;" />

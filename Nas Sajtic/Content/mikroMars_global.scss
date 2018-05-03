@@ -13,6 +13,7 @@ $secondary-font: 'Russo One', sans-serif;
 // BOJE
 $boja_bela: #fff;
 $boja_siva: #e2e2e2;
+$boja_medium_siva:#d3d3d3;
 $boja_tamno_siva:#949191;
 $boja_crna: #000000;
 
@@ -31,11 +32,16 @@ $boja_logo_svetlo_plava: #73a4c3;
 $boja_logo_plava: #3c85b2;
 $boja_logo_narandzasta: #ff6a00;
 
-$sivi_gradient:linear-gradient(to right bottom, $boja_siva, $boja_tamno_siva);
+$sivi_gradient:linear-gradient(to right bottom, $boja_siva, $boja_medium_siva);
 $narandzasti_gradient:linear-gradient(to right bottom, $boja_svetlo_narandzasta, $boja_tamno_narandzasta);
 $plavi_gradient:linear-gradient(to right bottom, $boja_svetlo_plava, $boja_ljubicasta);
 $zeleni_gradient:linear-gradient(to right bottom, $boja_svetlo_zelena, $boja_tamno_zelena);
 $boja_radial_belo-sivo: radial-gradient(rgba($boja_bela, 0.80) 60%, rgba($boja_siva, 0.80));
+$boja_linear_belo-sivo: linear-gradient(105deg, rgba($boja_bela, 0.8) 0%, rgba($boja_bela, 0.8) 50%, transparent 50%);
+$boja_linear_belo-sivo-res: linear-gradient(105deg, rgba($boja_bela, 0.8) 0%, rgba($boja_bela, 0.8) 65%, transparent 65%);
+$boja_linear_belo-sivo-mob: linear-gradient(to right, rgba($boja_bela, 0.8) 0%, rgba($boja_bela, 0.8) 100%);
+
+$plavi_logo_gradient:linear-gradient(to right bottom, $boja_svetlo_plava, $boja_plava);
 
 // OSTALO
 $senka:0 1rem 2rem rgba($boja_crna, .15);
@@ -46,7 +52,8 @@ $senka_text_bela:0 .3rem 1rem rgba($boja_bela, .5);
 // VELICINE
 $sirina_reda: 114rem;
 $horizontalni_razmak:4rem;
-$vertikalni_razmak:2rem;
+$vertikalni_razmak:4rem;
+$vertikalni_razmak-mali:2rem;
 $font_size_default:1.6rem;
 
 //SLIKE
@@ -61,9 +68,45 @@ $slika-2: linear-gradient(to bottom, rgba($boja_bela, 0.80), rgba($boja_crna, 0.
         clear:both;
     }
 }
+@mixin apsCentar{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+// RESPONZIV
+/*
+0 - 600px:      Mobilni
+600 - 900px:    Tablet (port)
+900 - 1200px:   Tablet (lend)
+[1200 - 1800px] su normalni stilovi
+1800px +:       Veliki ekrani
+*/
+@mixin responziv($velicina){
+    @if $velicina == mob{
+        @media(max-width: 37.5em){
+            @content;
+        }
+    }
+     @if $velicina == tab-por{
+        @media(max-width: 65.25em){
+            @content;
+        }
+    }
+      @if $velicina == tab-len{
+        @media(max-width: 75em){
+            @content;
+        }
+    }
+      @if $velicina == vel-ekr{
+        @media(min-width: 112.5em){
+            @content;
+        }
+    }
+}
 
 // GLOBAL
-
 
 *,
 *::after,
@@ -74,7 +117,7 @@ $slika-2: linear-gradient(to bottom, rgba($boja_bela, 0.80), rgba($boja_crna, 0.
 }
 body {
     z-index: -1040 !important;
-    background-image:linear-gradient(to bottom, rgba($boja_bela, 0.80), rgba($boja_siva, 0.8)), url(Images/hero.jpg);  
+    background-image:linear-gradient(to bottom, rgba($boja_bela, 0.9) 5%, rgba($boja_svetlo_plava, 0.4)), url(Images/hero.jpg);  
     background-position:top;
     background-size:cover;
     background-repeat:no-repeat;
@@ -84,25 +127,57 @@ body {
     h1,h2,h3,h4,h5,h6{
         font-family:$secondary-font!important;
     }
+    @include responziv(mob){
+        background-image:linear-gradient(to bottom, rgba($boja_bela, 0.9) 5%, rgba($boja_svetlo_plava, 0.4));  
+    }
 }
 html{
-    font-size:62.5%!important;    
+    font-size:62.5%;  //1rem = 10px, 10/16=62.5%      
+    
+    @include responziv(tab-len){
+        font-size: 56.25%!important;       //1rem = 9px, 9/16=56.25%
+    }   
+    @include responziv(tab-por){
+        font-size: 50%!important;         //1rem = 8px, 8/16=50%
+    }  
+    @include responziv(mob){
+        font-size: 37.5%!important;         //1rem = 6px, 6/16=37.5%
+    }   
+    @include responziv(vel-ekr){
+        font-size: 75%!important;          //1rem = 12px, 12/16=75%
+    }   
 }
 .imag {
     opacity: 1 !important;
+    height:200px;
+    float:right;
+    @include responziv(mob){
+        float:none;
+        margin:0 auto;
+    }
 }
 img.l-Logo {    
     margin-top: 1rem;
     margin-bottom: 1rem;   
     opacity: 1 !important;    
-    backface-visibility:hidden;
+    backface-visibility:hidden;    
+    
     
     &-header{
         margin-top: 1rem;
         margin-bottom: 1rem; 
         position:absolute;
-        height: 7rem;transition:all .3s;
-
+        height: 7rem;
+        transition:all .3s;
+        position:fixed;
+        z-index:1600;
+        left:10%;
+        @include responziv(mob){
+            opacity:0;
+            top:5%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }  
         &:hover{
         transform:scale(1.2);
     }
@@ -148,7 +223,57 @@ img.l-Logo {
 }
 
 // DUGME
-.dugme:link,.dugme:visited{
+input[type=submit]{
+    text-transform:uppercase;
+    text-decoration:none;
+    font-weight:600;
+    padding:1.5rem 4rem;
+    display:inline-block;
+    border-radius:100px;
+    border:none;
+    transition: all .2s;
+    position:relative;     
+    background-image:$plavi_logo_gradient;
+    color:$boja_bela;
+    line-height:.5rem;
+    &:hover{
+        transform:translateY(-.3rem);
+        box-shadow: $senka_hover;
+        color:$boja_bela;
+    }
+    &:link,&:visited{
+        text-transform:uppercase;
+        text-decoration:none;
+        font-weight:600;
+        padding:1.5rem 4rem;
+        display:inline-block;
+        border-radius:100px;
+        transition: all .2s;
+        position:relative;        
+    }
+    &:active{
+        transform:translateY(-.1rem);
+        box-shadow: $senka;
+    }
+    &::after{
+        content:"";
+        display:inline-block;
+        height:100%;
+        width:100%;        
+        border-radius:100px;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        transition: all .4s;
+    }
+    &:hover::after{
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity:0;
+    }
+}
+.dugme{
+    &:link,&:visited{
     text-transform:uppercase;
     text-decoration:none;
     font-weight:600;
@@ -157,51 +282,67 @@ img.l-Logo {
     border-radius:100px;
     transition: all .2s;
     position:relative;        
+    }
+    &:hover{
+        transform:translateY(-.3rem);
+        box-shadow: $senka_hover;
+        color:$boja_tamno_siva;
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity:0;
+        }
+    }
+    &:active{
+        transform:translateY(-.1rem);
+        box-shadow: $senka;
+    }
+    &--belo{
+        background-color:$boja_bela;
+        color:$boja_tamno_siva;
+        &::after{
+            background-color:$boja_bela;
+        }
+    }
+     &--plavo{
+        background-color:$boja_logo_plava;
+        color:$boja_bela;
+        &::after{
+            background-color:$boja_svetlo_plava;
+        }
+         &:hover{
+            transform:translateY(-.3rem);
+            box-shadow: $senka_hover;
+            color:$boja_bela;
+        }
+    }
+    &::after{
+        content:"";
+        display:inline-block;
+        height:100%;
+        width:100%;        
+        border-radius:100px;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        transition: all .4s;
+    } 
+    &_animacija{
+        animation:odozdoNaGore .5 ease-out .75;
+        animation-fill-mode:backwards;
+    }
 }
-.dugme:hover{
-    transform:translateY(-.3rem);
-    box-shadow: $senka_hover;
-    color:$boja_tamno_siva;
-}
-.dugme:active{
-    transform:translateY(-.1rem);
-    box-shadow: $senka;
-}
-.dugme--belo{
-    background-color:$boja_bela;
-    color:$boja_tamno_siva;
-}
-.dugme::after{
-    content:"";
-    display:inline-block;
-    height:100%;
-    width:100%;        
-    border-radius:100px;
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:-1;
-    transition: all .4s;
-}
-.dugme--belo::after{
-    background-color:$boja_bela;
-}
-.dugme:hover::after{
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity:0;
-}
-.dugme_animacija{
-    animation:odozdoNaGore .5 ease-out .75;
-    animation-fill-mode:backwards;
-}
+
 
 // INDEX
 .index {
+    -webkit-filter: drop-shadow($senka);
+        filter: drop-shadow($senka);
     .img {
         display: block;
         margin: auto;
         max-width: 100%;
-        opacity: 0;
+        opacity: 0;        
     }
 
     .fadeOut {
@@ -228,12 +369,14 @@ img.l-Logo {
 
     .logo {
         margin-top: 10rem;
-        opacity: 0;
+        opacity: 0;        
     }
 
     .opaque {
         opacity: 1;
         transition: opacity 1s;
+        -webkit-filter: drop-shadow($senka_text_bela);
+        filter: drop-shadow($senka_text_bela);
     }
 
     .sp1, .sp2, .sp3, .sp4 {
@@ -280,8 +423,8 @@ img.l-Logo {
     .sp4-f {
         opacity: 1;
         color: $boja_svetlo_plava;
-        font-size: 8rem;
-        top: 10rem;
+        font-size: 9rem;
+        top: 9rem;
         transition: color 1s, font-size 1s, top 1s;
     }
 
@@ -305,7 +448,7 @@ img.l-Logo {
 .l-container {
     display: flex;
     padding: .16rem;
-    background: linear-gradient(to right bottom, $boja_svetlo_plava, $boja_plava);
+    background: $plavi_logo_gradient;
     .l-row{    
         flex:1;
         display:flex;
@@ -325,7 +468,16 @@ img.l-Logo {
         .l-row-right {
             flex: 1;
             padding: 1rem;
-        }        
+        }     
+        @include responziv(mob){
+            background: $boja_medium_siva;
+            flex-direction:column;
+            margin:0 auto;
+            padding:2rem;
+            img{
+                padding:0;
+            }
+        }   
     }    
     h4{
         margin-top:.16rem;
@@ -356,6 +508,10 @@ img.l-Logo {
             p{
                 margin-top:.16rem;
             }
+        }
+        @include responziv(mob){
+            margin:0 auto;
+            flex-direction:column;
         }
     }  
 } // < -- FLEX
@@ -393,10 +549,14 @@ img.l-Logo {
 .l-custom-footer{    
     padding-top:5rem;
     background: $boja_crna;
-    margin-bottom:0;
+    margin-bottom:0!important;
+    width:100%;
+    margin: 0 auto;
     p{
         color: $boja_bela;
         font-size:1.28rem;
+        margin-bottom: 0;
+        padding-bottom: 10px;
     }
     img{
         box-shadow:rgba($boja_crna,.2);
@@ -415,36 +575,237 @@ img.l-Logo {
     margin: 0;
     padding: 0;
     text-align:center;
+    width:100%;
+}
+.navbar-inverse{
+    background-color:$boja_medium_siva!important;
+    box-shadow:$senka!important;
+    &.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+        background-color:$boja_medium_siva!important;
+        box-shadow:$senka!important;
+        border-color:$boja_medium_siva;        
+    }
+    &.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        border-color:$boja_medium_siva!important;
+    }
 }
 .l-navbar {
     display: flex;
+    img{
+        -webkit-filter: drop-shadow($senka);
+        filter: drop-shadow($senka);
+    }
     a.as {
-        color: $boja_radial_belo-sivo !important;
+        color: $boja_logo_plava !important;
     }
-    .as:hover,:active{
-            color:$boja_logo_narandzasta !important;
-        }   
-    .l-navbar-color {
-        background-color: $boja_siva !important;
-        border-color: $boja_logo_plava !important;
-    }
+    .as:hover, &:active{
+        color:$boja_logo_narandzasta !important;
+    }    
 
     .l-navbar-left {
         flex: 1;
     }
 
     .l-navbar-middle {
-        flex: 1;
+        //flex: 0;
     }
 
     .l-navbar-right {
         flex: 1;
     }
+    @include responziv(mob){
+        .l-navbar-left {
+            order:2;
+            flex: 1;
+            margin-left:30%;
+        }
+
+        .l-navbar-middle {
+            order:1;
+            flex: 0;
+        }
+
+        .l-navbar-right {
+            order:3;
+            flex: 1;
+        }
+    }
 } // < -- FLEX
 .l-navbar-color {
-    background-color: $boja_siva !important;
-    border-color: $boja_logo_plava !important;
+    background-color:$boja_medium_siva;
+    box-shadow:$senka;
 } // < -- FLEX
+.l-nav{
+    //display:block;
+    &__checkbox{
+        display:none;
+    }
+    &__dugme{
+        background-color:$boja_bela;
+        border-radius:.5rem;
+        height:4rem;
+        width:4rem;
+        position:fixed;
+        top:1rem;
+        right:1rem;
+        z-index:600;
+        text-align:center;
+        cursor:pointer;
+        display:none;
+         @include responziv(mob){
+            display:inline-block;
+            top: .5rem;
+        }
+    }
+    &__pozadina{
+        position:fixed;
+        border-bottom:1px solid $boja_siva;
+        top:0;
+        left:0;
+        height:5rem;
+        width:100%;
+        z-index:500;
+        background-image:$sivi_gradient;
+        //box-shadow:$senka;
+        backface-visibility:hidden;
+        transition: all .8s ease-in-out;
+        
+        @include responziv(mob){
+            opacity:0;
+            transform: scale(80);
+            height:100vh;
+            backface-visibility:hidden;
+            background-image:$plavi_logo_gradient;
+            visibility:hidden;
+        }
+    }
+    &__nav{
+        height:20vh;
+        position:fixed;
+        top:0;
+        left:-15rem;
+        z-index:510;
+        backface-visibility:hidden;
+
+        //opacity:0;
+        width:130%;
+        transition: all .5s ease-in;
+        @include responziv(mob){
+            visibility:hidden;
+            opacity:0;
+            height:100vh;
+            width:100%;
+            margin:0 auto;
+            text-align:center;
+        }
+        @include responziv(tab-por){
+            width:120%;
+        }
+    }
+    &__lista{
+        position:absolute;
+        top:18%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        list-style:none;
+        width:100%;   
+        padding-left:50%;    
+        @include responziv(mob){
+            position:absolute;
+            top:50%;
+            left:50%;
+        } 
+        @include responziv(tab-por){
+            position:absolute;
+            top:15%;
+            left:50%;
+        } 
+    }
+    &__stavke{
+        margin: 1rem auto;
+        float:left;
+        @include responziv(mob){
+            float:none;
+        }
+    }
+    &__link{
+        &:link, &:visited{
+            display:inline-block;
+            font-size:1.5rem;
+            font-weight:300;
+            padding: .5rem 2rem;
+            color:$boja_bela;
+            border-radius:10rem;
+            text-decoration:none;
+            text-transform:uppercase;
+            background-image:linear-gradient(120deg, transparent 0%, transparent 50%, $boja_bela 50%);
+            background-size:250%;
+            transition:all .5s;
+            @include responziv(mob){
+                font-size:3rem;
+            } 
+        }
+        &:hover, &:active{
+            background-position:100%;
+            color:$boja_logo_narandzasta;
+            transform: translateX(.5rem);
+        }
+        &--logo{
+            height:5rem;
+            transform:translate(-50%, 20%);
+        }
+    }
+    &__checkbox:checked ~ &__pozadina{
+        opacity:1;
+        transform:scaleX(50) scaleY(1);
+        visibility:visible;
+    }
+    &__checkbox:checked ~ &__nav{
+        opacity:1;
+        width:100%;
+        visibility:visible;
+    }
+    &__ikona{
+        position:relative;
+        margin-top:1.8rem;
+        &,&::before,&::after{
+            width:2rem;
+            height:.35rem;
+            background-color:$boja_tamno_siva;
+            display:inline-block;
+        }
+        &::before,&::after{
+            content:"";      
+            position:absolute;      
+            left:0;
+            transition: all .2s;
+        }
+        &::before{top:-.8rem;}
+        &::after{top:.8rem;}
+        @include responziv(mob){
+            &::before{top:-.7rem;}
+            &::after{top:.7rem;}
+            margin:2px auto;
+        }
+    }
+    &__dugme:hover &__ikona:before{
+        top:-.9rem;
+    }
+    &__dugme:hover &__ikona:after{
+        top:.9rem;
+    }
+    &__checkbox:checked + &__dugme &__ikona{
+         background-color: transparent;
+     }
+    &__checkbox:checked + &__dugme &__ikona::before{
+          top:0;
+         transform:rotate(-135deg);
+     }
+    &__checkbox:checked + &__dugme &__ikona::after{
+          top:0;
+         transform:rotate(135deg);
+     }
+}
 .l-text-box{
      margin :0 auto;
      text-align:center;
@@ -470,14 +831,34 @@ img.l-Logo {
 }
 .l-naslov-2{
     text-transform:uppercase;
-    color:$boja_bela;
-    text-shadow:$senka_text;
     font-size:2.7rem;
     backface-visibility:hidden;
-    margin-bottom:5rem;
+    margin-bottom:3rem;
 
-    animation-name:sDesnaNaLevo;
-    animation-duration:1s;
+    &-animacija{
+        animation-name:sDesnaNaLevo;
+        animation-duration:1s;
+        animation-timing-function:ease-out;
+
+        //animation-iteration-count:2;
+        //animation-delay:3s;
+    }
+    &-animacija-2{
+        animation-name:fejdin;
+        animation-duration:1s;
+        animation-timing-function:ease-out;
+
+        //animation-iteration-count:2;
+        //animation-delay:3s;
+    }
+    &-plava{
+        color:$boja_logo_plava;
+        text-shadow:$senka_text_bela;
+    }
+    &-bela{
+        color:$boja_bela;
+        text-shadow:$senka_text;
+    }
 }
 .l-naslov-3{
     text-transform:uppercase;    
@@ -512,12 +893,96 @@ img.l-Logo {
         color:$boja_crna;
     }
 }
+.popap{
+    height:100vh;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:rgba($boja_crna,.8);
+    z-index:9999;
+    opacity:0;
+    visibility:hidden;
+    transition:all .3s;    
+
+    &__sadrzaj{
+        @include apsCentar;
+        width:75%;
+        background-color:$boja_bela;
+        box-shadow:$senka_hover;
+        border-radius:.3rem;
+        display:table;
+        overflow:hidden;
+        opacity:0;
+        transform: translate(-50%, -50%) scale(.2);
+        transition:all .5s .2s;
+    }
+
+    &__levo{
+        width:33.33333%;
+        display:table-cell;
+    }
+    &__desno{
+        width:66.666667%;
+        display:table-cell;
+        vertical-align:middle;
+        padding:3rem 5rem;
+    }
+    &__slika{
+        display:block;
+        width:100%;
+    }
+    &__tekst{
+        font-size:1.4rem;
+        margin-bottom:4rem;
+        column-count:2;
+        column-gap:4rem;
+        column-rule: .1rem solid $boja_siva;
+        -moz-column-count:2;
+        -moz-column-gap:4rem;
+        -moz-column-rule: .1rem solid $boja_siva;
+    }
+    &:target{
+        opacity:1;
+        visibility:visible;
+    }
+
+    &:target &__sadrzaj {
+        opacity:1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__zatvoren{
+        &:link, &:visited{
+            color:$boja_tamno_siva;
+            position:absolute;
+            top:2.5rem;
+            right:2.5rem;
+            font-size:3rem;
+            text-decoration:none;
+            display:inline-block;
+            transition:all .2s;
+        }
+        &:hover{
+            color:$boja_logo_plava;
+        }
+    }
+}
+#test{
+    @include responziv(mob){
+        display:none;
+    }
+}
 
 // GALERY
 .l-sekcija{
     //background-image:linear-gradient(to bottom, rgba($boja_bela, 0.80), rgba($boja_crna, 0.63)), url(Images/hero.jpg);
     background-repeat:no-repeat;
     padding:10rem 0 20rem 0;
+    @include responziv(mob){
+        background-image:$plavi_logo_gradient;
+    }
+    
     &-bela{
         background-color:$boja_bela;
         padding:4rem;
@@ -525,6 +990,12 @@ img.l-Logo {
     &-narandzasta{
         background-image: linear-gradient(to right bottom, $boja_svetlo_narandzasta, $boja_tamno_narandzasta);
         padding:4rem;
+        transition:all .3s;
+
+        &:hover{
+            background-image: linear-gradient(to left top, $boja_svetlo_narandzasta, $boja_tamno_narandzasta);
+            transform:  translate(-90deg);
+        }
     }
     &-siva{
         background-image: $boja_radial_belo-sivo;
@@ -541,13 +1012,42 @@ img.l-Logo {
     }    
     &:not(:last-child){
         margin-bottom:$vertikalni_razmak;
+        @include responziv(tab-por){
+                margin-bottom:$vertikalni_razmak-mali !important;
+            }
     }
+
+    @include responziv(tab-por){
+         max-width:50% !important;
+         padding:0 1rem;
+    }
+    @include responziv(mob){
+         max-width:50rem !important;
+         padding:0 1rem;
+    }
+
     @include clearfix;
 
     [class^="l-kol-"]{
-        float:left;
+        float:left;        
         &:not(:last-child){
             margin-right:$horizontalni_razmak;
+
+             @include responziv(tab-por){
+                margin-right:5% !important;
+            }
+             @include responziv(mob){
+                margin-right:0 !important;
+            }
+        }
+
+        @include responziv(tab-por){
+            width:50rem!important;
+            margin-bottom:$vertikalni_razmak-mali;
+        }
+        @include responziv(mob){
+            width:100%!important;
+            margin-bottom:$vertikalni_razmak-mali;
         }
     }
 
@@ -581,6 +1081,10 @@ img.l-Logo {
 
         //animation-iteration-count:2;
         //animation-delay:3s;
+        &:last-child{
+            animation-delay:.2s;
+            animation-fill-mode:backwards;
+        }
     }
 }
 .l-karta{
@@ -607,7 +1111,7 @@ img.l-Logo {
         }
         &--nazad{            
             transform: rotateY(180deg);
-            background-image: linear-gradient(to right bottom, $boja_siva, $boja_tamno_siva);
+            background-image: $sivi_gradient;
         }
     }
 
@@ -647,13 +1151,13 @@ img.l-Logo {
         z-index:3;
     }
     &__detalji{
-        font-size:1.2rem;
-        font-weight:300;
+        font-size:1.5rem;
+        font-weight:600;
         text-align:left;
-        color:$boja_bela;
-        font-family:$secondary-font;
+        color:$boja_crna;
+        font-family:$primary-font;
         padding:1rem;
-        margin-top:4rem;
+        margin-top:3.2rem;
         text-align:center;
         z-index:3;
     }
@@ -665,7 +1169,33 @@ img.l-Logo {
         transform: translate(-50%, -50%);
         width:90%;
         text-align:center;
-    }    
+    }   
+     
+    @include responziv(tab-por){        
+        height: auto;
+        margin-bottom:3rem;
+        &__pozadina{
+            height: auto;
+            position:relative;
+            border-radius:.3rem;
+            &--nazad{            
+                transform: rotateY(0);
+                background-image: $sivi_gradient;
+            }
+        }
+
+        &:hover &__pozadina--napred{
+        transform: rotateY(0);
+        }        
+         // zadnja strana
+        &__zadnja_strana{
+            position:relative;
+            top:0;
+            left:0;
+            transform: translate(0);
+            width:100%;
+        }  
+    }
 }
 
 // PONUDA
@@ -700,7 +1230,7 @@ img.l-Logo {
                 background-image: $zeleni_gradient;
             }
             &-2{
-                background-image: $plavi_gradient;
+                background-image: $plavi_logo_gradient;
             }
             &-3{                
                 background-image: $narandzasti_gradient;
@@ -736,7 +1266,7 @@ img.l-Logo {
             font-weight:900;
         }
         &--2{
-            background-image: $plavi_gradient;
+            background-image: $plavi_logo_gradient;
             font-family:$primary-font;
             text-shadow:$senka_text;
             color:$boja_bela;
@@ -820,7 +1350,73 @@ img.l-Logo {
         font-size:6rem;
         font-weight:100;        
     }
+
+    @include responziv(tab-por){        
+        height: auto;
+        border-radius:.3rem;
+        box-shadow: $senka;
+        background-color:$boja_bela;
+        &__pozadina{
+            height: auto;
+            position:relative;
+            box-shadow: none;
+            h1{
+                //margin:0;            
+            }
+                       
+            &--nazad{            
+                transform: rotateY(0);
+                clip-path: polygon(0 0, 30% 0, 50% 10%, 70% 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+        &:hover &__pozadina--napred{
+            transform: rotateY(0);
+        }     
+        &__detalji{
+        font-family:$primary-font;
+        padding:1rem 2rem;
+        }   
+        // zadnja strana
+        &__opis{
+            position:relative;
+            top:0;
+            left:0;
+            transform: translate(0);
+            width:100%;
+            text-align:center;
+            padding:5rem 1rem 4rem 1rem;
+        }
+        &__cena-box{
+            margin-bottom:3rem;
+            font-family:$primary-font;
+        }
+        &__cena-vrednost{
+            font-size:6rem;
+        }
+    }
 }
+<<<<<<< HEAD
+=======
+.SpecPonudaMini{
+     h1{
+            text-align:center;
+        }
+        img{
+            max-width:100%;
+        }
+        .col-md-4{
+            margin-bottom:20px;
+        }
+        #imagepreview{
+            width:unset !important;
+            height: unset !important;
+        }
+        .modal-dialog{
+            width: fit-content;
+        }
+}
+>>>>>>> mikro
 .SpecPonudaMini{
      h1{
             text-align:center;
@@ -844,7 +1440,6 @@ img.l-Logo {
 }
 
 // O NAMA
-
 .l-onama{
     position:relative;
     padding: 10rem 0 15rem 0;
@@ -859,12 +1454,21 @@ img.l-Logo {
         padding-left:9rem;
         font-size:$font_size_default;
         transform:skewX(-12deg);
+
+        @include responziv(tab-por){
+            width:100%;
+            padding:3rem; 
+            padding-left:6rem;
+        }
+        @include responziv(mob){
+            transform:skewX(0);
+        }
         & > *{
             transform:skewX(12deg);
         }
 
         &__oblik{
-            background-image: linear-gradient(to right bottom, $boja_svetlo_plava, $boja_ljubicasta);
+            background-image: $plavi_logo_gradient;
 
             width:15rem;
             height:15rem;
@@ -878,9 +1482,15 @@ img.l-Logo {
                 transform: translateX(-3rem) skewX(12deg);
                 position: relative;
                 text-align: center;
+                @include responziv(mob){
+                    transform:translateX(-3rem) skewX(0);
+                }
+            }
+            @include responziv(mob){
+                transform:translateX(-3rem) skewX(0);
             }
         }
-         &__slika{
+        &__slika{
             height:100%;
             backface-visibility:hidden;
             &-firma{
@@ -901,6 +1511,12 @@ img.l-Logo {
                 position: relative;
                 text-align: center;
                 color:$boja_crna;
+                @include responziv(mob){
+                    transform: skewX(0);
+                }
+            }
+            @include responziv(mob){
+                transform: skewX(0);
             }
         }           
         &__ime{
@@ -927,8 +1543,126 @@ img.l-Logo {
         }
     }
 
-// ANIMACIJA
+// KONTAKT
+.l-kontakt{
+    padding:10rem 0;
+    background-image:$plavi_logo_gradient;
+}
+.l-forma{
+    background-image:$boja_linear_belo-sivo , url(/Content/Images/hero2.jpg);
+    background-size:cover;
+    border-radius:.3rem;
+    box-shadow:$senka_hover;
 
+
+    @include responziv(tab-len){
+        background-image:$boja_linear_belo-sivo-res , url(/Content/Images/hero2.jpg);
+        background-size:cover;
+        border-radius:.3rem;
+        box-shadow:$senka_hover;
+    }
+    @include responziv(tab-por){
+        background-image:$boja_linear_belo-sivo-mob , url(/Content/Images/hero2.jpg);
+        background-size:cover;
+        border-radius:.3rem;
+        box-shadow:$senka_hover;
+    }
+
+    &__def{
+        width:50%;
+        padding:4rem;
+        @include responziv(tab-len){
+            width:65%;
+        }
+        @include responziv(tab-por){
+            width:100%;
+        }
+    }
+}
+.forma{
+    &__sadrzaj:not(:last-child){
+        margin-bottom:1rem;
+    }
+    &__input{
+        font-size:1.5rem;
+        font-family:inherit;
+        padding:1rem 2rem;
+        border-radius:.2rem;
+        background-color:rgba($boja_bela,.5);
+        border:none;
+        border-bottom:.3rem solid transparent;
+        width:90%;
+        display:block;
+
+        @include responziv(tab-por){
+            width:100%;
+        }
+
+        &:focus{
+            outline:none;
+            box-shadow: $senka;
+            border-bottom:.3rem solid $boja_logo_plava;
+        }
+        &:focus:invalid{
+            border-bottom: .3rem solid $boja_logo_narandzasta;
+        }
+        &::-webkit-input-placeholder{
+            color:$boja_tamno_siva;
+        }
+    }   
+    &__label{
+        font-size:1.2rem;
+        font-weight:700;
+        margin-left:2rem;
+        margin-top:.5rem;
+        margin-bottom:1.2rem;
+        display:block;
+        color:$boja_crna;
+        transition:all .3s;
+    }
+    &__input:placeholder-shown + &__label{
+        opacity:0;
+        visibility:hidden;
+        transform:translateY(-4rem);
+    }
+    &__poruka{
+        font-size:1.5rem;
+        font-family:inherit;
+        padding:1rem 2rem;
+        border-radius:.2rem;
+        background-color:rgba($boja_bela,.5);
+        border:none;
+        border-bottom:.3rem solid transparent;
+        width:90%;
+        display:block;
+        white-space:pre-wrap;
+        max-width:95%;
+
+        @include responziv(tab-por){
+            width:100%;
+            max-width:100%;
+        }
+
+         &:focus{
+            outline:none;
+            box-shadow: $senka;
+            border-bottom:.3rem solid $boja_logo_plava;
+        }
+        &:focus:invalid{
+            border-bottom: .3rem solid $boja_logo_narandzasta;
+        }
+        &::-webkit-input-placeholder{
+            color:$boja_tamno_siva;
+        }
+    }
+    &__poruka:placeholder-shown + &__label{
+        opacity:0;
+        visibility:hidden;
+        transform:translateY(-12rem);
+    }
+}
+
+// ANIMACIJA
 @keyframes sLevaNaDesno{
     0%{
         opacity:0;
@@ -960,14 +1694,29 @@ img.l-Logo {
         opacity:0;
         transform:translateY(3rem);
     }
+    80%{
+        transform:translateY(-.2rem);
+    }
     100%{
         opacity:1;
         transform:translate(0);
     }
 }
+@keyframes fejdin{
+    0%{
+        opacity:0;
+        transform:scale(.2);
+    }
+    80%{
+        transform:scale(1.2);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
 
 // VIDEO
-
 .l-bg-video{
     position:absolute;
     top:0;
