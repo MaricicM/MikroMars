@@ -225,8 +225,7 @@
     <Content Include="Content\Images\Galerija\iBrowHanna.somee.com.png" />
     <Content Include="Content\Images\Galerija\MontazneKuceIvanjica.rs.png" />
     <Content Include="Content\Images\gif\123.gif" />
-    <Content Include="Content\Images\gif\giphy1.gif" />
-    <Content Include="Content\Images\gif\giphy2.gif" />
+    <Content Include="Content\Images\gif\gg5.gif" />
     <Content Include="Content\Images\hero.jpg" />
     <Content Include="Content\Images\hero2.jpg" />
     <Content Include="Content\Images\izrada-e-shopa-680x350.jpg" />
@@ -302,6 +301,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\lightslider.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -317,8 +317,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -341,14 +339,14 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Galerija.cshtml" />
-    <Content Include="Views\Ponuda\Ponuda.cshtml" />
-    <Content Include="Views\Ponuda\_Ponuda1.cshtml" />
-    <Content Include="Views\Ponuda\_Ponuda2.cshtml" />
-    <Content Include="Views\Ponuda\_Ponuda3.cshtml" />
     <Content Include="Views\Home\ONama.cshtml" />
     <Content Include="Views\Home\Kontakt.cshtml" />
     <Content Include="Views\Home\RadoviUToku.cshtml" />
+    <Content Include="Views\Ponuda\Ponuda.cshtml" />
     <Content Include="Views\Ponuda\SpecPonudaMini.cshtml" />
+    <Content Include="Views\Ponuda\_Ponuda1.cshtml" />
+    <Content Include="Views\Ponuda\_Ponuda2.cshtml" />
+    <Content Include="Views\Ponuda\_Ponuda3.cshtml" />
     <Content Include="Views\Ponuda\SpecPonudaOsnovna.cshtml" />
   </ItemGroup>
   <ItemGroup>

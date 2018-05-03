@@ -47,7 +47,7 @@ html {
       font-size: 37.5% !important; } }
   @media (min-width: 112.5em) {
     html {
-      font-size: 75% !important; } }
+      font-size: 62.5% !important; } }
 
 .imag {
   opacity: 1 !important;
@@ -1017,8 +1017,6 @@ input[type=submit] {
   .l-flajer__cena-vrednost {
     font-size: 6rem;
     font-weight: 100; }
-<<<<<<< HEAD
-=======
   @media (max-width: 65.25em) {
     .l-flajer {
       height: auto;
@@ -1066,7 +1064,6 @@ input[type=submit] {
 
 .SpecPonudaMini .modal-dialog {
   width: fit-content; }
->>>>>>> mikro
 
 .SpecPonudaMini h1 {
   text-align: center; }

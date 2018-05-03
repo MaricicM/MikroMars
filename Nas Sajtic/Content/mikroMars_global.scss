@@ -144,7 +144,7 @@ html{
         font-size: 37.5%!important;         //1rem = 6px, 6/16=37.5%
     }   
     @include responziv(vel-ekr){
-        font-size: 75%!important;          //1rem = 12px, 12/16=75%
+        font-size: 62.5%!important;          //1rem = 12px, 12/16=75%
     }   
 }
 .imag {
@@ -1396,8 +1396,6 @@ input[type=submit]{
         }
     }
 }
-<<<<<<< HEAD
-=======
 .SpecPonudaMini{
      h1{
             text-align:center;
@@ -1416,7 +1414,6 @@ input[type=submit]{
             width: fit-content;
         }
 }
->>>>>>> mikro
 .SpecPonudaMini{
      h1{
             text-align:center;

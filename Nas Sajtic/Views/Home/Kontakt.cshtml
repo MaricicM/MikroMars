@@ -1,70 +1,8 @@
-<<<<<<< HEAD
 ﻿@model Nas_Sajtic.Models.Contact
 
 @{
     ViewBag.Title = "Kontakt";
 }
-<div class="l-sekcija">
-=======
-﻿
-@*<div class="l-sekcija">
-    <h2>Kontakt</h2>
-  <div class="l-sekcija">
->>>>>>> mikro
-    <div class="l-red">
-        <form action="/Home/SendMessage" method="post">
-            @Html.AntiForgeryToken()
-            <div class="form-horizontal">
-                <div class="form-group">
-                    <label class="control-label col-md-2" for="Name">Ime:</label>
-                    <div class="col-md-4">
-<<<<<<< HEAD
-                        <input autofocus class="form-control text-box single-line" data-val="true" data-val-length="Unesite ime do 50 slova." data-val-length-max="50" id="Name" name="Name" type="text" value="@Model.Name" />
-=======
-                        <input placeholder="Unesite ime..." autofocus class="form-control text-box single-line" data-val="true" data-val-length="Unesite ime do 50 slova." data-val-length-max="50" id="Name" name="Name" type="text" value="@Model.Name" />
->>>>>>> mikro
-                        <span class="field-validation-valid text-danger" data-valmsg-for="Name" data-valmsg-replace="true"></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-md-2" for="Email">E-mail:</label>
-                    <div class="col-md-4">
-<<<<<<< HEAD
-                        <input class="form-control text-box single-line" data-val="true" data-val-email="Niste uneli valudnu e-mail adresu." data-val-required="Niste uneli e-mail." id="Email" name="Email" type="email" value="@Model.Email" />
-=======
-                        <input placeholder="Unesite e-mail..." class="form-control text-box single-line" data-val="true" data-val-email="Niste uneli valudnu e-mail adresu." data-val-required="Niste uneli e-mail." id="Email" name="Email" type="email" value="@Model.Email" />
->>>>>>> mikro
-                        <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-md-2" for="Message">Postavite pitanje</label>
-                    <div class="col-md-8">
-<<<<<<< HEAD
-                        <textarea rows="10" class="form-control text-box" data-val="true" data-val-required="Niste postavili pitanje." id="Message" name="Message">@Model.Message</textarea>
-=======
-                        <textarea placeholder="Postavite pitanje..." rows="10" class="form-control text-box" data-val="true" data-val-required="Niste postavili pitanje." id="Message" name="Message">@Model.Message</textarea>
->>>>>>> mikro
-                        <span class="field-validation-valid text-danger" data-valmsg-for="Message" data-valmsg-replace="true"></span>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-<<<<<<< HEAD
-                        <input type="submit" value="Pošalji" class="btn btn-default" />
-=======
-                        <input type="submit" value="Pošalji" class="dugme" />
->>>>>>> mikro
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-<<<<<<< HEAD
-=======
-</div>*@
-
 <div class="l-kontakt">
     <div class="l-red">
         <div class="l-forma">
@@ -94,7 +32,6 @@
             </div>
         </div>
     </div>
->>>>>>> mikro
 </div>
 
 @section scripts{    

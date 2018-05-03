@@ -36,10 +36,32 @@
         <img class="laptop img" src="~/Content/Images/LapTop.png" />
         <img class="fon img" src="~/Content/Images/Phone.png" />
         <img class="tablet img" src="~/Content/Images/office-free-for-android.png" />
-        <img class="gif img" src="~/Content/Images/gif/giphy2.gif" />
+        <img class="gif img" src="~/Content/Images/gif/gg5.gif" />
     </div>
-    <div class="l-astal"></div>
 
+          
+</div>
+<div class="l-astal"></div>
+
+<div class="l-wrapper">        
+    <div class="l-container">
+        <div class="l-row">
+            <div class="l-row-left">
+                <h5>IZRADA SAJTOVA</h5>
+                <p>
+                    Sa velikim brojem uradjenih kako običnih-informativnih sajtova tako i velikih online prodavnica, sajtova za nekretnine, medicinskih sajtova, prezentacija za hotele, male i velike privatne firme, kao i sajtova sa izuzetno specifičnim zahtevima smatramo da smo dovoljno iskusni, kvalitetni da vaš novi sajt u potpunosti prezentuje vašu delatnost na najbolji mogući način.
+                    Dobar web dizajn, kao i dobra i dugoročna pozicija vašeg sajta prilikom pretrage na google-u ( eng, SEO ) obezbediće vam kvalitetne posetioce sajta i potencijalne korisnike vaših usluga.
+                </p>
+            </div>
+            <div class="l-row-right">
+                <img class="imag" src="~/Content/Images/gif/123.gif"/>
+            </div>
+        </div>
+    </div>
+    <h4>POVERITE NAM IZRADU VAŠEG SAJTA I UVERITE SE U KVALITET I PROFESIONALNI ODNOS PREMA NAŠIM KLIJENTIMA</h4> 
+</div>
+
+<div class="container index">
     <div class="row">
         <div class="col-xs-12">
             <div class="demo">
@@ -69,25 +91,11 @@
                 </div>
             </div>
         </div>
-    </div>       
-</div>
-<div class="l-wrapper">        
-    <div class="l-container">
-        <div class="l-row">
-            <div class="l-row-left">
-                <h5>IZRADA SAJTOVA</h5>
-                <p>
-                    Sa velikim brojem uradjenih kako običnih-informativnih sajtova tako i velikih online prodavnica, sajtova za nekretnine, medicinskih sajtova, prezentacija za hotele, male i velike privatne firme, kao i sajtova sa izuzetno specifičnim zahtevima smatramo da smo dovoljno iskusni, kvalitetni da vaš novi sajt u potpunosti prezentuje vašu delatnost na najbolji mogući način.
-                    Dobar web dizajn, kao i dobra i dugoročna pozicija vašeg sajta prilikom pretrage na google-u ( eng, SEO ) obezbediće vam kvalitetne posetioce sajta i potencijalne korisnike vaših usluga.
-                </p>
-            </div>
-            <div class="l-row-right">
-                <img class="imag" src="~/Content/Images/gif/123.gif"/>
-            </div>
-        </div>
     </div>
-    <h4>POVERITE NAM IZRADU VAŠEG SAJTA I UVERITE SE U KVALITET I PROFESIONALNI ODNOS PREMA NAŠIM KLIJENTIMA</h4>       
-    <div class="l-proces" id="proces">        
+</div>
+
+<div class="l-wrapper">
+    <div class="l-proces" id="proces">
         <div class="l-proces-row">
             <div class="l-proces-img">
                 <a href="#popap"><img src="~/Content/Images/razgovor-o-sajtu-1.png" /></a>
@@ -95,7 +103,6 @@
                 <p>Da bi našli najbolje rešenje za vaš sajt moramo se upoznati i sa vašim poslom, koji su vam ciljevi i zadaci.</p>
             </div>
             <div class="l-proces-img">
-<<<<<<< HEAD
                 <img src="~/Content/Images/dizajn-sajta-1.png" />
                 <h5>IZGLED SAJTA</h5>
                 <p>Dogovor sa vama oko dizajna sajta, vašim željama oko izgleda i funkcionalnosti sajta, bojama…</p>
@@ -108,7 +115,6 @@
             <div class="l-proces-img">
                 <img src="~/Content/Images/pustanje-sajta-online.png" />
                 <h5>POKRETANJE SAJTA</h5>
-=======
                 <a href="#popap"><img src="~/Content/Images/dizajn-sajta-1.png" /></a>
                 <h5>DIZAJN SAJTA</h5>
                 <p>Dogovor sa vama oko dizajna sajta, vašim željama oko izgleda i funkcionalnosti sajta, bojama…</p>
@@ -121,11 +127,10 @@
             <div class="l-proces-img">
                 <a href="#popap"><img src="~/Content/Images/pustanje-sajta-online.png" /></a>
                 <h5>POSTAVLJANJE ON-LINE</h5>
->>>>>>> mikro
-                <p>Pošto se sajt uradi, postavlja se online, izvode se poslednje provere da sve radi perfektno i bez greške.</p>                
+                <p>Pošto se sajt uradi, postavlja se online, izvode se poslednje provere da sve radi perfektno i bez greške.</p>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
 
 <div class="popap" id="popap">
@@ -145,10 +150,73 @@
         </div>
     </div>
 </div>
+@section styles{
+    <style>
+        .zumOut{
+            transform: scale(0.5);
+            transition: all 0.8s;
+            top:10px;
+        }
+        .zumOut > img{
+            opacity:1 !important;
+            max-width:100%;
+        }
+        .zumIn{
+            transform: scale(1.4) !important;
+            transition: all 0.8s;
+        }
+        .prvi{
+
+        }
+        .content-slider{            
+            overflow:visible;
+        }
+        .content-slider li {
+            background-color: #ed3020;
+            text-align: center;
+            color: #FFF;
+            margin-top:10px;
+        }
+
+        .content-slider h3 {
+            margin: 0;
+            padding: 70px 0;
+        }
+
+        .demo {
+            width: 100%;
+            padding: 40px 0 0 40px;
+            border-radius: 10px;
+            overflow:hidden;
+        }
+
+            .demo .item {
+                margin-bottom: 60px;
+            }
+
+        .lSSlideWrapper {
+            border-radius: 10px;
+        }
+        .lSSlideOuter{
+            overflow:visible;
+        }
+        .lSSlideOuter .lSPager.lSGallery {
+            height: auto !important;
+        }
+
+            .lSSlideOuter .lSPager.lSGallery img {
+                height: auto !important;
+            }
+
+        .lSSlideWrapper{
+            overflow:visible;
+        }
+    </style>
+    }
 
 @section scripts{
+    <script src="~/Scripts/lightslider.js"></script>
     <script>
-
         $(function () {
             $('.laptop, .fon, .tablet, .gif').addClass('opaque');
         });
@@ -164,6 +232,7 @@
             controls: false,
             enableDrag: false,
             freeMove: false,
+            pager: false,
 
             onBeforeStart: function (el) {
                 $('.prvi').addClass('zumIn');

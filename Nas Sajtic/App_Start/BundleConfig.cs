@@ -24,6 +24,7 @@ namespace Nas_Sajtic
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/lightslider.css",
                       "~/Content/mikroMars_global.css",
                       "~/Content/bootstrap.css"));
         }
