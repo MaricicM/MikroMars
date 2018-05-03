@@ -288,6 +288,45 @@ input[type=submit] {
     opacity: 0;
     transition: all 2s; }
 
+.demo {
+  width: 100%;
+  padding: 40px 0 0 40px;
+  border-radius: 10px;
+  overflow: hidden; }
+  .demo .zumOut {
+    transform: scale(0.5);
+    transition: all 0.8s;
+    top: 10px; }
+    .demo .zumOut img {
+      opacity: 1 !important;
+      max-width: 100%; }
+  .demo .zumIn {
+    transform: scale(1.4) !important;
+    transition: all 0.8s; }
+  .demo .prvi {
+    opacity: 1; }
+  .demo .content-slider {
+    overflow: visible; }
+    .demo .content-slider li {
+      background-color: #ed3020;
+      text-align: center;
+      color: #FFF;
+      margin-top: 10px; }
+    .demo .content-slider h3 {
+      margin: 0;
+      padding: 70px 0; }
+  .demo .item {
+    margin-bottom: 60px; }
+  .demo .lSSlideWrapper {
+    border-radius: 10px;
+    overflow: visible; }
+  .demo .lSSlideOuter {
+    overflow: visible; }
+  .demo .lSSlideOuter .lSPager .lSGallery {
+    height: auto !important; }
+    .demo .lSSlideOuter .lSPager .lSGallery img {
+      height: auto !important; }
+
 .l-astal {
   height: 18rem;
   margin-top: -13rem;
