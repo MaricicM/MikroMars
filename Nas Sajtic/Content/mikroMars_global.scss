@@ -442,7 +442,7 @@ input[type=submit]{
 }
 .demo {
     width: 100%;
-    padding: 40px 0 0 40px;
+    padding: 9rem 0 6rem 0;
     border-radius: 10px;
     overflow: hidden;
 
@@ -472,7 +472,7 @@ input[type=submit]{
         overflow: visible;
 
         li {
-            background-color: #ed3020;
+            background-image: $plavi_logo_gradient;
             text-align: center;
             color: #FFF;
             margin-top: 10px;
@@ -550,6 +550,9 @@ input[type=submit]{
     }    
     h4{
         margin-top:.16rem;
+    }
+    &__sivi-gradient{
+        background: $sivi_gradient;
     }
 } // < -- FLEX
 .l-proces{
@@ -897,6 +900,12 @@ input[type=submit]{
     &-narandzasta{
         color:$boja_logo_narandzasta;
     }
+    @include responziv(tab-por){
+        font-size:2.7rem;
+    }
+    @include responziv(mob){
+        font-size:2.5rem;
+    }
 }
 .l-naslov-2{
     text-transform:uppercase;
@@ -928,6 +937,12 @@ input[type=submit]{
         color:$boja_bela;
         text-shadow:$senka_text;
     }
+    @include responziv(tab-por){
+        font-size:2rem;
+    }
+    @include responziv(mob){
+        font-size:1.8rem;
+    }
 }
 .l-naslov-3{
     text-transform:uppercase;    
@@ -942,6 +957,12 @@ input[type=submit]{
     &-narandzasta{
         color:$boja_logo_narandzasta;
         text-shadow:$senka_text_bela;
+    }
+    @include responziv(tab-por){
+        font-size:1.6rem!important;
+    }
+    @include responziv(mob){
+        font-size:1.5rem!important;
     }
 }
 .l-paragraf{
@@ -960,6 +981,12 @@ input[type=submit]{
     }
     &-crna{
         color:$boja_crna;
+    }
+    @include responziv(tab-por){
+        font-size:1.3rem;
+    }
+    @include responziv(mob){
+        font-size:1.2rem;
     }
 }
 .popap{
@@ -986,7 +1013,6 @@ input[type=submit]{
         transform: translate(-50%, -50%) scale(.2);
         transition:all .5s .2s;
     }
-
     &__levo{
         width:33.33333%;
         display:table-cell;
@@ -1015,7 +1041,6 @@ input[type=submit]{
         opacity:1;
         visibility:visible;
     }
-
     &:target &__sadrzaj {
         opacity:1;
         transform: translate(-50%, -50%) scale(1);
@@ -1035,7 +1060,59 @@ input[type=submit]{
         &:hover{
             color:$boja_logo_plava;
         }
+    }  
+}
+.popap_spec{
+    display: none;
+    overflow: auto;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color:rgba($boja_crna,.8);
+    z-index:9999;
+
+    &__fade{        
+        -webkit-transition: -webkit-transform 0.3s ease-out;
+        -moz-transition: -moz-transform 0.3s ease-out;
+        -o-transition: -o-transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
     }
+    &__dialog{
+        z-index: 9999;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__sadrzaj{
+        position: relative;
+        width:100%;
+        background-color:$boja_bela;
+        box-shadow:$senka_hover;
+        border-radius:.3rem;
+        display:table;
+        overflow:hidden;
+        transform:scale(.8);
+        transition:all .5s .2s;
+        background-clip: padding-box;
+    }
+    &__zatvoren{
+        &:link, &:visited{
+            color:$boja_bela;
+            position:absolute;
+            top:2.5rem;
+            right:5rem;
+            font-size:3rem;
+            text-decoration:none;
+            display:inline-block;
+            transition:all .2s;
+        }
+        &:hover{
+            color:$boja_logo_plava;
+        }
+    }      
 }
 #test{
     @include responziv(mob){
@@ -1060,11 +1137,6 @@ input[type=submit]{
         background-image: linear-gradient(to right bottom, $boja_svetlo_narandzasta, $boja_tamno_narandzasta);
         padding:4rem;
         transition:all .3s;
-
-        &:hover{
-            background-image: linear-gradient(to left top, $boja_svetlo_narandzasta, $boja_tamno_narandzasta);
-            transform:  translate(-90deg);
-        }
     }
     &-siva{
         background-image: $boja_radial_belo-sivo;
@@ -1781,6 +1853,14 @@ input[type=submit]{
         transform:scale(1);
     }
 }
+@-webkit-keyframes fejdin-auto {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 // VIDEO
 .l-bg-video{
@@ -1798,4 +1878,3 @@ input[type=submit]{
         object-fit:cover;
     }
 }
-

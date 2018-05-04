@@ -290,7 +290,7 @@ input[type=submit] {
 
 .demo {
   width: 100%;
-  padding: 40px 0 0 40px;
+  padding: 9rem 0 6rem 0;
   border-radius: 10px;
   overflow: hidden; }
   .demo .zumOut {
@@ -308,7 +308,7 @@ input[type=submit] {
   .demo .content-slider {
     overflow: visible; }
     .demo .content-slider li {
-      background-color: #ed3020;
+      background-image: linear-gradient(to right bottom, #7acfef, #49a9ce);
       text-align: center;
       color: #FFF;
       margin-top: 10px; }
@@ -362,6 +362,8 @@ input[type=submit] {
           padding: 0; } }
   .l-container h4 {
     margin-top: .16rem; }
+  .l-container__sivi-gradient {
+    background: linear-gradient(to right bottom, #e2e2e2, #d3d3d3); }
 
 .l-proces {
   display: flex;
@@ -659,6 +661,12 @@ input[type=submit] {
     animation-timing-function: ease-out; }
   .l-naslov-1-narandzasta {
     color: #ff6a00; }
+  @media (max-width: 65.25em) {
+    .l-naslov-1 {
+      font-size: 2.7rem; } }
+  @media (max-width: 37.5em) {
+    .l-naslov-1 {
+      font-size: 2.5rem; } }
 
 .l-naslov-2 {
   text-transform: uppercase;
@@ -679,6 +687,12 @@ input[type=submit] {
   .l-naslov-2-bela {
     color: #fff;
     text-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5); }
+  @media (max-width: 65.25em) {
+    .l-naslov-2 {
+      font-size: 2rem; } }
+  @media (max-width: 37.5em) {
+    .l-naslov-2 {
+      font-size: 1.8rem; } }
 
 .l-naslov-3 {
   text-transform: uppercase;
@@ -692,6 +706,12 @@ input[type=submit] {
   .l-naslov-3-narandzasta {
     color: #ff6a00;
     text-shadow: 0 0.3rem 1rem rgba(255, 255, 255, 0.5); }
+  @media (max-width: 65.25em) {
+    .l-naslov-3 {
+      font-size: 1.6rem !important; } }
+  @media (max-width: 37.5em) {
+    .l-naslov-3 {
+      font-size: 1.5rem !important; } }
 
 .l-paragraf {
   text-align: justify;
@@ -706,6 +726,12 @@ input[type=submit] {
     color: #3c85b2; }
   .l-paragraf-crna {
     color: #000000; }
+  @media (max-width: 65.25em) {
+    .l-paragraf {
+      font-size: 1.3rem; } }
+  @media (max-width: 37.5em) {
+    .l-paragraf {
+      font-size: 1.2rem; } }
 
 .popap {
   height: 100vh;
@@ -770,6 +796,50 @@ input[type=submit] {
   .popap__zatvoren:hover {
     color: #3c85b2; }
 
+.popap_spec {
+  display: none;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999; }
+  .popap_spec__fade {
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; }
+  .popap_spec__dialog {
+    z-index: 9999;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto; }
+  .popap_spec__sadrzaj {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    border-radius: .3rem;
+    display: table;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: all .5s .2s;
+    background-clip: padding-box; }
+  .popap_spec__zatvoren:link, .popap_spec__zatvoren:visited {
+    color: #fff;
+    position: absolute;
+    top: 2.5rem;
+    right: 5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s; }
+  .popap_spec__zatvoren:hover {
+    color: #3c85b2; }
+
 @media (max-width: 37.5em) {
   #test {
     display: none; } }
@@ -787,9 +857,6 @@ input[type=submit] {
     background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
     padding: 4rem;
     transition: all .3s; }
-    .l-sekcija-narandzasta:hover {
-      background-image: linear-gradient(to left top, #ffb900, #ff7730);
-      transform: translate(-90deg); }
   .l-sekcija-siva {
     background-image: radial-gradient(rgba(255, 255, 255, 0.8) 60%, rgba(226, 226, 226, 0.8));
     padding: 4rem; }
@@ -1351,6 +1418,12 @@ input[type=submit] {
   100% {
     opacity: 1;
     transform: scale(1); } }
+
+@-webkit-keyframes fejdin-auto {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .l-bg-video {
   position: absolute;
