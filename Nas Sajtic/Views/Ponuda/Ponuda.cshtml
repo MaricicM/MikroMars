@@ -5,7 +5,7 @@
 
 <div class="l-sekcija">
     <div class="l-red">
-        <h1 class="l-naslov-1 l-naslov-1-animacija">Nudimo</h1>
+        <h1 class="l-naslov-1 l-naslov-1-animacija">Ponuda</h1>
         <p class="l-paragraf l-paragraf-animacija l-paragraf-bela">
             Našu generalnu ponudu smo podelili u tri paketa: <b>MINI</b>, <b>OSNOVNI</b> i <b>PLUS</b> paket. Svaki od njih je specifičan i razlikuje se kako u ceni i načinu izrade tako i u izdvojenom vremenu za kreiranje. Ukoliko se ne uklapate ni u jedan od ponuđenih paketa, da li što se tiče dizajna ili budžeta, svakako stojimo na raspolaganju da kreiramo sajt po vašim potrebama.
         </p>
@@ -50,15 +50,15 @@
                             <li>Do 15 stranica</li>
                             <li>Responzivni dizajn</li>
                             <li>Pokretni elementi</li>
-                            @*<li>Kontakt forma</li>
-                            <li>Skripte</li>*@
+                            <li>Kontakt forma</li>
+                            @*<li>Skripte</li>*@
                         </ul>
                     </div>
                 </div>
                 <div class="l-flajer__pozadina l-flajer__pozadina--nazad l-flajer__pozadina--nazad-2">
                     <div class="l-flajer__opis">
                         <div class="l-flajer__cena-box">
-                            <p class="l-flajer__cena-samo">Samo</p>
+                            <p class="l-flajer__cena-samo">Od</p>
                             <p class="l-flajer__cena-vrednost">155€</p>
                         </div>
                         @*<a href="#" class="dugme dugme--belo">Pogledaj primer</a>*@
@@ -77,7 +77,8 @@
                             <li>Do 30 stranica</li>
                             <li>Responzivni dizajn</li>
                             <li>Galerija</li>
-                            <li>Kontakt forma</li>
+                            <li>Web prodavnica</li>
+                            <li>Kontakt forma</li>                            
                             <li>Skripte</li>
                         </ul>
                     </div>
@@ -85,8 +86,8 @@
                 <div class="l-flajer__pozadina l-flajer__pozadina--nazad l-flajer__pozadina--nazad-3">
                     <div class="l-flajer__opis">
                         <div class="l-flajer__cena-box">
-                            <p class="l-flajer__cena-samo">Samo</p>
-                            <p class="l-flajer__cena-vrednost">215€</p>
+                            <p class="l-flajer__cena-samo">OD</p>
+                            <p class="l-flajer__cena-vrednost">245€</p>
                         </div>
                         @*<a href="#" class="dugme dugme--belo">Pogledaj primer</a>*@
                     </div>
@@ -95,7 +96,7 @@
         </div>
     </div>
     <div class="l-red">
-        <div class="l-sekcija l-sekcija-narandzasta">
+        <div class="l-sekcija l-sekcija-narandzasta" id="specPonuda">
             <div class="l-red">
                 <h1 class="l-naslov-1 l-naslov-1-animacija">Specijalno!</h1>
                 <h1 class="l-naslov-2 l-naslov-2-bela l-naslov-2-animacija">Sajamska ponuda<span>*</span></h1>
@@ -140,7 +141,7 @@
                                     <li>Responzivni dizajn</li>
                                     <li>Pokretni elementi</li>
                                     @*<li>Kontakt forma</li>
-                        <li>Skripte</li>*@
+                                    <li>Skripte</li>*@
                                 </ul>
                             </div>
                         </div>
@@ -161,6 +162,45 @@
     </div>
 </div>
 
+
+<div id="popap_spec" class="popap_spec popap_spec__fade" role="dialog">
+    <div class="popap_spec__dialog">
+        <div class="popap_spec__sadrzaj">
+            <a href="#" class="popap_spec__zatvoren" data-dismiss="modal"><i class="fas fa-times"></i></a>
+            <div class="l-sekcija l-sekcija-narandzasta">
+                <div class="ta-center">
+                    <h1 class="l-naslov-1 l-naslov-1-animacija">Obaveštenje!</h1>
+                    <h1 class="l-naslov-2 l-naslov-2-bela l-naslov-2-animacija">Sajamska ponuda<span>*</span></h1>
+                    <h3 class="l-naslov-3 l-naslov-3-bela">Izdvojili smo za 31. međunarodni sajam kozmetike <strong>DODIR PARIZA</strong> specijalne ponude:</h3>
+                    <h1 class="l-naslov-2-plava l-naslov-2-animacija-2">MINI i OSNOVNI</h1><span class="l-naslov-2 l-naslov-2-bela">paket</span><h3>po neverovatno povoljnim cenama!</h3><br />
+                </div>
+                <div class="ta-center">
+                    <a href="#" id="zatvori" class="dugme dugme--plavo ta-center" data-dismiss="modal">Pogledaj ponudu</a>
+                    <h3 class="l-naslov-3 l-naslov-3-bela">*Ponuda važi za vreme trajanja sajma kozmetike!</h3>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#popap_spec').fadeIn(500).modal("show");
+            }, 2000); // milliseconds
+        });
+        $("#zatvori").click(function () {
+            $('#popap_spec').on('hidden.bs.modal', function (e) {
+                $('html, body').animate({
+                    scrollTop: $("#specPonuda").offset().top
+                }, 500);
+            })
+        });
+    </script>
+    }
 @*<div class="l-red">
         <div class="l-kol-1-od-2">
             1 od 2
