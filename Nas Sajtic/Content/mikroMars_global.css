@@ -12,6 +12,50 @@
 [1200 - 1800px] su normalni stilovi
 1800px +:       Veliki ekrani
 */
+@media screen and (max-width: 1367px) {
+  .index .fon {
+    left: 34.3rem !important;
+    top: -20.5rem !important;
+    width: 15rem !important; }
+  .index .gif {
+    top: -94rem !important; }
+  .index .tablet {
+    left: -40rem !important;
+    top: -45.5rem !important;
+    width: 38rem !important; } }
+
+@media screen and (max-width: 1200px) {
+  .index .fon {
+    left: 31rem !important;
+    top: -17.5rem !important;
+    width: 13rem !important; }
+  .index .gif {
+    top: -83.6rem !important;
+    width: 52.8rem !important;
+    height: 30rem !important; }
+  .index .laptop {
+    width: 70rem !important; }
+  .index .tablet {
+    left: -39rem !important;
+    top: -40rem !important;
+    width: 35rem !important; } }
+
+@media screen and (max-width: 930px) {
+  .index .fon {
+    left: 23rem !important;
+    top: -13.5rem !important;
+    width: 10rem !important; }
+  .index .gif {
+    top: -66.6rem !important;
+    width: 41rem !important;
+    height: 27rem !important; }
+  .index .laptop {
+    width: 55rem !important; }
+  .index .tablet {
+    left: -28rem !important;
+    top: -30.5rem !important;
+    width: 27rem !important; } }
+
 *,
 *::after,
 *::before {
@@ -233,9 +277,11 @@ input[type=submit] {
     left: -.6rem;
     top: -103.6rem;
     width: 57.8rem;
-    height: 32.2rem;
+    height: 32.5rem;
     position: relative;
     z-index: -1; }
+  .index .laptop {
+    width: 79.4rem; }
   .index .logo {
     margin-top: 10rem;
     opacity: 0; }

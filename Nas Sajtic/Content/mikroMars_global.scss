@@ -85,26 +85,99 @@ $slika-2: linear-gradient(to bottom, rgba($boja_bela, 0.80), rgba($boja_crna, 0.
 */
 @mixin responziv($velicina){
     @if $velicina == mob{
-        @media(max-width: 37.5em){
+        @media(max-width: 37.5em){      //600px
             @content;
         }
     }
     @if $velicina == tab-por{
-        @media(max-width: 65.25em){
+        @media(max-width: 65.25em){     //1044px   
             @content;
         }
     }
     @if $velicina == tab-len{
-        @media(max-width: 75em){
+        @media(max-width: 75em){        //1200px
             @content;
         }
     }
     @if $velicina == vel-ekr{
-        @media(min-width: 112.5em){
+        @media(min-width: 112.5em){    //1800px 
             @content;
         }
     }
 }
+
+@media screen and (max-width:1367px) {
+    .index {
+        .fon {
+            left: 34.3rem !important;
+            top: -20.5rem !important;
+            width: 15rem !important;
+        }
+        .gif {
+            top: -94rem !important;
+        }
+        .laptop{
+            
+        }
+
+        .tablet {
+            left: -40rem !important;
+            top: -45.5rem !important;
+            width: 38rem !important;
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .index {
+        .fon {
+            left: 31rem !important;
+            top: -17.5rem !important;
+            width: 13rem !important;
+        }
+
+        .gif {
+            top: -83.6rem !important;
+            width: 52.8rem !important;
+            height: 30rem !important;
+        }
+
+        .laptop {
+            width: 70rem !important;
+        }
+
+        .tablet {
+            left: -39rem !important;
+            top: -40rem !important;
+            width: 35rem !important;
+        }
+    }
+}
+@media screen and (max-width:930px) {
+    .index {
+        .fon {
+            left: 23rem !important;
+            top: -13.5rem !important;
+            width: 10rem !important;
+        }
+
+        .gif {
+            top: -66.6rem !important;
+            width: 41rem !important;
+            height: 27rem !important;
+        }
+
+        .laptop {
+            width: 55rem !important;
+        }
+
+        .tablet {
+            left: -28rem !important;
+            top: -30.5rem !important;
+            width: 27rem !important;
+        }
+    }
+}
+
 
 // GLOBAL
 
@@ -362,9 +435,12 @@ input[type=submit]{
         left: -.6rem;
         top: -103.6rem;
         width: 57.8rem;
-        height: 32.2rem;
+        height: 32.5rem;
         position: relative;
         z-index: -1;
+    }
+    .laptop{
+        width:79.4rem;
     }
 
     .logo {
