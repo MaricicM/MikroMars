@@ -753,7 +753,7 @@ input[type=submit]{
         background-image:$sivi_gradient;
         //box-shadow:$senka;
         backface-visibility:hidden;
-        transition: all .8s ease-in-out;
+        transition: all .3s ease-in-out;
         
         @include responziv(mob){
             opacity:0;
@@ -774,7 +774,7 @@ input[type=submit]{
 
         //opacity:0;
         width:130%;
-        transition: all .5s ease-in;
+        transition: all .3s ease-in;
         @include responziv(mob){
             visibility:hidden;
             opacity:0;
@@ -797,8 +797,9 @@ input[type=submit]{
         padding-left:50%;    
         @include responziv(mob){
             position:absolute;
-            /*top:50%;
-            left:50%;*/
+            top:40%;
+            left:50%;
+            transform:translate(-50%, -50%);
         } 
         @include responziv(tab-por){
             position:absolute;
