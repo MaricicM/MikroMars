@@ -1696,7 +1696,7 @@ input[type=submit]{
         &:hover &__slika{
             transform:scale(.8);
             transition:all .5s;
-            filter:blur(.1rem) brightness(80%);
+            filter:blur(.5rem) brightness(50%);
         }
         &:last-child{
             margin-top:5rem;

@@ -218,7 +218,6 @@
     <Content Include="Content\Images\controls.png" />
     <Content Include="Content\Images\cvet1.jpg" />
     <Content Include="Content\Images\cvet2.jpg" />
-    <Content Include="Content\Images\dizajn-sajta-1.png" />
     <Content Include="Content\Images\Galerija\arabeska.JPG" />
     <Content Include="Content\Images\Galerija\bal.JPG" />
     <Content Include="Content\Images\Galerija\CeDaBidne.Nekad.png" />
@@ -234,7 +233,6 @@
     <Content Include="Content\Images\izrada-e-shopa-680x350.jpg" />
     <Content Include="Content\Images\izrada-sajta-saljder-1-680x350.jpg" />
     <Content Include="Content\Images\izrada-sajtova-680x350.jpg" />
-    <Content Include="Content\Images\kodiranje-sajta.png" />
     <Content Include="Content\Images\LapTop.png" />
     <Content Include="Content\Images\logo\mm-logo-negativ-tekst.png" />
     <Content Include="Content\Images\logo\mm-logo-negativ-znak.png" />
@@ -259,10 +257,7 @@
     <Content Include="Content\Images\Proces\pokretanje2.jpg" />
     <Content Include="Content\Images\Proces\upoznavanje1.jpg" />
     <Content Include="Content\Images\Proces\upoznavanje2.jpg" />
-    <Content Include="Content\Images\pustanje-sajta-online.png" />
-    <Content Include="Content\Images\R-466929-1449337598-9409.jpeg.jpg" />
     <Content Include="Content\Images\radovi-u-toku-1.jpg" />
-    <Content Include="Content\Images\razgovor-o-sajtu-1.png" />
     <Content Include="Content\Images\redizajn-sajtova-680x350.jpg" />
     <Content Include="Content\Images\Spec\SpecMini1.jpg" />
     <Content Include="Content\Images\Spec\SpecMini2.jpg" />
