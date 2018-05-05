@@ -1247,15 +1247,15 @@ input[type=submit]{
     -moz-perspective: 150rem;
     position:relative;
     height: 25rem;
-    margin-bottom:3rem;
+    margin-bottom:1rem;
     &__pozadina{
-        height: 25rem;
+        height: 28rem;
         transition: all .8s ease;
 
         position:absolute;
         top:0;
         left:0;
-        width:100%;
+        width:110%;
         backface-visibility:hidden;
         border-radius:.3rem;
         box-shadow: $senka;
@@ -1280,7 +1280,7 @@ input[type=submit]{
 
     // prednja strana
     &__slika{    
-        height:15rem;         
+        height:auto;         
         clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
         text-align:center;
         img{
@@ -1301,7 +1301,7 @@ input[type=submit]{
         font-family:$primary-font;
         padding:.5rem;
         position:absolute;
-        top:13rem;
+        top:16rem;
         right:.5rem;
         z-index:3;
     }
@@ -1312,7 +1312,7 @@ input[type=submit]{
         color:$boja_crna;
         font-family:$primary-font;
         padding:1rem;
-        margin-top:3.2rem;
+        margin-top:5rem;
         text-align:center;
         z-index:3;
     }
@@ -1338,6 +1338,9 @@ input[type=submit]{
                 background-image: $sivi_gradient;
             }
         }
+        &__naslov{
+        top:25rem;
+    }
 
         &:hover &__pozadina--napred{
         transform: rotateY(0);
