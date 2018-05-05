@@ -243,6 +243,7 @@
     <Content Include="Content\Images\logo\mm-logo-pozitv-tekst.png" />
     <Content Include="Content\Images\logo\mm-logo-pozitv.png" />
     <Content Include="Content\Images\logo\mm-logo-tekst.png" />
+    <Content Include="Content\Images\logo\mm-logo-znak-400px.png" />
     <Content Include="Content\Images\logo\mm-logo-znak.png" />
     <Content Include="Content\Images\logo\mm-logo.png" />
     <Content Include="Content\Images\logo\mm_logo.jpg" />
@@ -250,6 +251,14 @@
     <Content Include="Content\Images\Mirko.png" />
     <Content Include="Content\Images\office-free-for-android.png" />
     <Content Include="Content\Images\Phone.png" />
+    <Content Include="Content\Images\Proces\dizajn1.jpg" />
+    <Content Include="Content\Images\Proces\dizajn2.jpg" />
+    <Content Include="Content\Images\Proces\izrada1.jpg" />
+    <Content Include="Content\Images\Proces\izrada2.jpg" />
+    <Content Include="Content\Images\Proces\pokretanje1.jpg" />
+    <Content Include="Content\Images\Proces\pokretanje2.jpg" />
+    <Content Include="Content\Images\Proces\upoznavanje1.jpg" />
+    <Content Include="Content\Images\Proces\upoznavanje2.jpg" />
     <Content Include="Content\Images\pustanje-sajta-online.png" />
     <Content Include="Content\Images\R-466929-1449337598-9409.jpeg.jpg" />
     <Content Include="Content\Images\radovi-u-toku-1.jpg" />
@@ -352,7 +361,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\Proces\" />
     <Folder Include="Content\Images\Video\" />
   </ItemGroup>
   <ItemGroup>

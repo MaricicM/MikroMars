@@ -40,6 +40,7 @@ $boja_radial_belo-sivo: radial-gradient(rgba($boja_bela, 0.80) 60%, rgba($boja_s
 $boja_linear_belo-sivo: linear-gradient(105deg, rgba($boja_bela, 0.8) 0%, rgba($boja_bela, 0.8) 50%, transparent 50%);
 $boja_linear_belo-sivo-res: linear-gradient(105deg, rgba($boja_bela, 0.8) 0%, rgba($boja_bela, 0.8) 65%, transparent 65%);
 $boja_linear_belo-sivo-mob: linear-gradient(to right, rgba($boja_bela, 0.8) 0%, rgba($boja_bela, 0.8) 100%);
+$gradient_astal: linear-gradient(to bottom, rgba($boja_bela, 0.80), 80%, rgba($boja_siva, 0.60));
 
 $plavi_logo_gradient:linear-gradient(to right bottom, $boja_svetlo_plava, $boja_plava);
 
@@ -512,7 +513,7 @@ input[type=submit]{
 .l-astal{
     height:18rem;
     margin-top:-13rem;
-    background:linear-gradient(to bottom, rgba($boja_bela, 0.80), 80%, rgba($boja_siva, 0.60));
+    background:$gradient_astal;
 }
 .l-container {
     display: flex;
@@ -559,7 +560,7 @@ input[type=submit]{
     display:flex;
     padding:10rem 0rem;
     color:$boja_logo_plava;
-     background:linear-gradient(to bottom, rgba($boja_bela, 0.80), 80%, rgba($boja_siva, 0.60));
+    background:$gradient_astal;
     .l-proces-row{
         margin-left:25rem;
         margin-right:25rem;
@@ -1260,11 +1261,11 @@ input[type=submit]{
         overflow:hidden;
 
         &--napred{
-            background-image: $sivi_gradient;
+            background: $gradient_astal;
         }
         &--nazad{            
             transform: rotateY(180deg);
-            background-image: $sivi_gradient;
+            background: $gradient_astal;
         }
     }
 
@@ -1374,7 +1375,8 @@ input[type=submit]{
         }
 
         &--napred{
-            background-color:$boja_bela;
+            //background-color:$boja_bela;
+            background: $gradient_astal;
         }
         &--nazad{            
             transform: rotateY(180deg);
