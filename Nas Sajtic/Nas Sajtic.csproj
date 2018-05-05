@@ -246,6 +246,8 @@
     <Content Include="Content\Images\logo\mm-logo-znak.png" />
     <Content Include="Content\Images\logo\mm-logo.png" />
     <Content Include="Content\Images\logo\mm_logo.jpg" />
+    <Content Include="Content\Images\Milos.png" />
+    <Content Include="Content\Images\Mirko.png" />
     <Content Include="Content\Images\office-free-for-android.png" />
     <Content Include="Content\Images\Phone.png" />
     <Content Include="Content\Images\pustanje-sajta-online.png" />
@@ -265,10 +267,6 @@
     <Content Include="Content\Images\Spec\SpecOsnovna4.jpg" />
     <Content Include="Content\Images\Spec\SpecOsnovna5.jpg" />
     <Content Include="Content\Images\Spec\SpecOsnovna6.jpg" />
-    <Content Include="Content\Images\Video\Clouds_Fly_By.mp4" />
-    <Content Include="Content\Images\Video\Clouds_Fly_By.webm" />
-    <Content Include="Content\Images\Video\Love-Coding.mp4" />
-    <Content Include="Content\Images\Video\Love-Coding.webm" />
     <Content Include="Content\Images\web-dizajn-680x350.jpg" />
     <Content Include="Content\lightslider.css" />
     <Content Include="Content\mikroMars_global.css">
@@ -354,6 +352,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\Proces\" />
+    <Folder Include="Content\Images\Video\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

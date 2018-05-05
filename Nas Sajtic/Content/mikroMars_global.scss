@@ -170,7 +170,7 @@ img.l-Logo {
         height: 7rem;
         transition:all .3s;
         position:fixed;
-        z-index:1600;
+        z-index:1501;
         left:10%;
         @include responziv(mob){
             opacity:0;
@@ -559,7 +559,7 @@ input[type=submit]{
     display:flex;
     padding:10rem 0rem;
     color:$boja_logo_plava;
-    background-color:$boja_bela;
+     background:linear-gradient(to bottom, rgba($boja_bela, 0.80), 80%, rgba($boja_siva, 0.60));
     .l-proces-row{
         margin-left:25rem;
         margin-right:25rem;
@@ -598,11 +598,11 @@ input[type=submit]{
     }
     h4{
         //margin-bottom:3.2rem;
-        padding:3rem 2rem;
-        background-color:$boja_plava;
+        padding:4rem 2rem;
+        background:linear-gradient(to bottom, rgba($boja_bela, 0.80), 80%, rgba($boja_siva, 0.60));
         margin:0 auto;
         font-weight:500;
-        color:$boja_bela;
+        color:$boja_logo_plava;
         font-size:1.6rem;
     }
 }
@@ -619,10 +619,12 @@ input[type=submit]{
 
 // LAYOUT
 .l-custom-footer{    
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding-top:5rem;
-    background: $boja_crna;
-    margin-bottom:0!important;
-    width:100%;
+    background-color: #232323;
     margin: 0 auto;
     p{
         color: $boja_bela;
@@ -630,16 +632,26 @@ input[type=submit]{
         margin-bottom: 0;
         padding-bottom: 10px;
     }
+    a{
+        color:$boja_medium_siva;
+        width:100%;
+        height:100%;
+        font-size:1.3rem;
+        padding-right:1rem;
+        padding-left:1rem;
+    }
     img{
         box-shadow:rgba($boja_crna,.2);
     }
     .l-soc-net{
-        margin-right:5rem;
         transition:all .3s;
         cursor:pointer;
         &:hover{
-            transform:scale(1.2);
+            transform:scale(1.3);
         }
+    }
+    &__levo{
+        margin-bottom:2rem;       
     }
 }
 .l-footer-ul{
@@ -776,21 +788,21 @@ input[type=submit]{
     }
     &__lista{
         position:absolute;
-        top:18%;
+        /*top:18%;
         left:50%;
-        transform:translate(-50%, -50%);
+        transform:translate(-50%, -50%);*/
         list-style:none;
         width:100%;   
         padding-left:50%;    
         @include responziv(mob){
             position:absolute;
-            top:50%;
-            left:50%;
+            /*top:50%;
+            left:50%;*/
         } 
         @include responziv(tab-por){
             position:absolute;
-            top:15%;
-            left:50%;
+            /*top:15%;
+            left:50%;*/
         } 
     }
     &__stavke{
@@ -1554,27 +1566,12 @@ input[type=submit]{
         .modal-dialog{
             width: fit-content;
         }
-}
-.SpecPonudaMini{
-     h1{
-            text-align:center;
-        }
-        img{
-            max-width:100%;
-        }
-        .col-md-4{
-            margin-bottom:20px;
-        }
-        #imagepreview{
-            width:unset !important;
-            height: unset !important;
-        }
-        .modal-dialog{
-            width: fit-content;
-        }
         .row:last-child{
             margin-bottom:$horizontalni_razmak;
         }
+}
+.modal{
+    z-index:1540!important;
 }
 
 // O NAMA
@@ -1597,6 +1594,7 @@ input[type=submit]{
             width:100%;
             padding:3rem; 
             padding-left:6rem;
+            transform:skewX(0);
         }
         @include responziv(mob){
             transform:skewX(0);
@@ -1620,9 +1618,15 @@ input[type=submit]{
                 transform: translateX(-3rem) skewX(12deg);
                 position: relative;
                 text-align: center;
+                @include responziv(tab-por){
+                transform:translateX(-3rem) skewX(0);
+            }
                 @include responziv(mob){
                     transform:translateX(-3rem) skewX(0);
                 }
+            }
+             @include responziv(tab-por){
+                transform:translateX(-3rem) skewX(0);
             }
             @include responziv(mob){
                 transform:translateX(-3rem) skewX(0);
@@ -1633,14 +1637,21 @@ input[type=submit]{
             backface-visibility:hidden;
             &-firma{
                 height: 15rem;
-                transform: translateX(-3rem);
+                transform: translateX(1);
                 position: relative;
                 text-align: center;
                 &-img{
                     width:100%;
                     opacity:.05;
                 }
+                @include responziv(tab-por){
+                    height:7rem;
+                }
+                @include responziv(mob){
+                    height:7rem;
+                }
             }
+            
         }   
         &__text{
             transform:skewX(12deg);
@@ -1649,9 +1660,15 @@ input[type=submit]{
                 position: relative;
                 text-align: center;
                 color:$boja_crna;
+                @include responziv(tab-por){
+                transform: skewX(0);
+            }
                 @include responziv(mob){
                     transform: skewX(0);
                 }
+            }
+            @include responziv(tab-por){
+                transform: skewX(0);
             }
             @include responziv(mob){
                 transform: skewX(0);
@@ -1678,6 +1695,9 @@ input[type=submit]{
             transform:scale(.8);
             transition:all .5s;
             filter:blur(.1rem) brightness(80%);
+        }
+        &:last-child{
+            margin-top:5rem;
         }
     }
 
