@@ -205,22 +205,22 @@ img.l-Logo {
     text-align:center !important;    
 }
 .l-margina-gore-velika{
-    margin-top:12rem;
+    margin-top:12rem!important;
 }
 .l-margina-gore-srednja{
-    margin-top:6rem;
+    margin-top:6rem!important;
 }
 .l-margina-gore-mala{
-    margin-top:2rem;
+    margin-top:2rem!important;
 }
 .l-margina-dole-velika{
-    margin-bottom:12rem;
+    margin-bottom:12rem!important;
 }
 .l-margina-dole-srednja{
-    margin-bottom:6rem;
+    margin-bottom:6rem!important;
 }
 .l-margina-dole-mala{
-    margin-bottom:2rem;
+    margin-bottom:2rem!important;
 }
 
 // DUGME
@@ -1239,6 +1239,18 @@ input[type=submit]{
         &:last-child{
             animation-delay:.2s;
             animation-fill-mode:backwards;
+        }
+    }
+    .logo-sekcija{  
+        img{
+            width:100%;
+            transition:all .3s;
+            cursor:pointer;      
+            box-shadow:$senka;
+            backface-visibility:hidden;
+            &:hover{
+                transform:scale(1.7);
+            }
         }
     }
 }
