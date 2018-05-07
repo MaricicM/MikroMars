@@ -32,6 +32,8 @@ $boja_logo_svetlo_plava: #73a4c3;
 $boja_logo_plava: #3c85b2;
 $boja_logo_narandzasta: #ff6a00;
 
+$footer_siva:#232323;
+
 $sivi_gradient:linear-gradient(to right bottom, $boja_siva, $boja_medium_siva);
 $narandzasti_gradient:linear-gradient(to right bottom, $boja_svetlo_narandzasta, $boja_tamno_narandzasta);
 $plavi_gradient:linear-gradient(to right bottom, $boja_svetlo_plava, $boja_ljubicasta);
@@ -154,6 +156,13 @@ html{
     float:right;
     @include responziv(mob){
         float:none;
+        margin:0 auto;
+    }
+}
+.imag1 {
+    opacity: 1 !important;
+    height:20rem;
+    @include responziv(mob){
         margin:0 auto;
     }
 }
@@ -586,7 +595,7 @@ input[type=submit]{
             margin:0 auto;
             flex-direction:column;
         }
-    }  
+    }
 } // < -- FLEX
 .l-wrapper {
     left: 0;
@@ -617,6 +626,14 @@ input[type=submit]{
     margin: auto;
     max-width: 50rem;
 }
+.proces-hover{
+    color:$boja_logo_plava;
+    transition:all .3s;
+    &:hover{
+        transform:scale(1.5);
+        color:$boja_logo_plava;
+    }
+}
 
 // LAYOUT
 .l-custom-footer{    
@@ -625,7 +642,7 @@ input[type=submit]{
     bottom: 0;
     width: 100%;
     padding-top:5rem;
-    background-color: #232323;
+    background-color: $footer_siva;
     margin: 0 auto;
     p{
         color: $boja_bela;
@@ -1074,7 +1091,7 @@ input[type=submit]{
         &:hover{
             color:$boja_logo_plava;
         }
-    }  
+    }      
 }
 .popap_spec{
     display: none;
@@ -1267,7 +1284,7 @@ input[type=submit]{
         position:absolute;
         top:0;
         left:0;
-        width:110%;
+        width:100%;
         backface-visibility:hidden;
         border-radius:.3rem;
         box-shadow: $senka;
@@ -1422,7 +1439,7 @@ input[type=submit]{
         background-size:cover;
         background-position:center;
         background-blend-mode: screen;
-        height:23rem;   
+        height:19rem;   
         clip-path:polygon(0 0, 100% 0, 100% 45%, 50% 80%, 0 45%);
         text-align:center;
         padding-top:10%;
