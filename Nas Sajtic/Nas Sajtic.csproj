@@ -247,7 +247,6 @@
     <Content Include="Content\Images\izrada-sajta-saljder-1-680x350.jpg" />
     <Content Include="Content\Images\izrada-sajtova-680x350.jpg" />
     <Content Include="Content\Images\LapTop.png" />
-    <Content Include="Content\Images\LapTopFonTablet.png" />
     <Content Include="Content\Images\logo\mm-logo-negativ-tekst.png" />
     <Content Include="Content\Images\logo\mm-logo-negativ-znak.png" />
     <Content Include="Content\Images\logo\mm-logo-negativ.png" />
@@ -263,6 +262,7 @@
     <Content Include="Content\Images\Mirko.png" />
     <Content Include="Content\Images\office-free-for-android.png" />
     <Content Include="Content\Images\Phone.png" />
+    <Content Include="Content\Images\photo-camera-png-image--photo-camera-png-image-6.png" />
     <Content Include="Content\Images\Proces\dizajn1.jpg" />
     <Content Include="Content\Images\Proces\dizajn2.jpg" />
     <Content Include="Content\Images\Proces\izrada1.jpg" />
