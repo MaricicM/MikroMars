@@ -439,7 +439,7 @@ input[type=submit]{
     }
 
     .tablet {
-        left: -44rem;
+        left: -35rem;
         top: -52.5rem;
         width: 45rem;
         position: relative;
@@ -571,8 +571,6 @@ input[type=submit]{
     color:$boja_logo_plava;
     background:$gradient_astal;
     flex-direction:column;
-    .l-proces-opis{
-    }
     .l-proces-row{
         margin-left:25rem;
         margin-right:25rem;
@@ -592,7 +590,7 @@ input[type=submit]{
             }
             p{
                 margin-top:.16rem;
-            }
+            }           
         }
         @include responziv(mob){
             margin:0 auto;
@@ -631,10 +629,13 @@ input[type=submit]{
 }
 .proces-hover{
     color:$boja_logo_plava;
-    transition:all .5s ease-out;
+    transition:all .8s ease-out;
     backface-visibility:visible;
-    &:hover{
-        transform:scale(1.6) rotateY(180deg);
+    -moz-transition:all .8s ease-out;
+    -moz-backface-visibility:visible;
+    &:hover, &:visited{
+        transform:scale(1.7) rotate(360deg);
+        -moz-transform:scale(1.7) rotate(360deg);
         color:$boja_logo_narandzasta;
         padding-bottom:1rem;
     }
