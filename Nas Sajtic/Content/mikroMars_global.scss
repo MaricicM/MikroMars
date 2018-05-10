@@ -2107,3 +2107,11 @@ input[type=submit]{
         object-fit:cover;
     }
 }
+.vise{
+    transition:all .3s;
+    backface-visibility:hidden;
+    &:hover{
+        transform:scale(1.5);
+        color:$boja_logo_narandzasta;
+    }
+}

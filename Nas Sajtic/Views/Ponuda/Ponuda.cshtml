@@ -119,8 +119,9 @@
                 <p class="l-paragraf l-paragraf-animacija l-paragraf-logo_plava">
                     Pogledajte neke od primera logotipa:
                 </p>
-                <div class="l-red l-margina-gore-srednja">
-                    <div class="l-kol-1-od-4">
+                <a href="#vise" id="pogledajVise" class="vise pull-right" data-toggle="collapse"><i id="strelica-dole" class="fas fa-angle-down fa-2x"></i><i id="strelica-gore" class="fas fa-angle-up fa-2x" hidden></i></a>
+                <div class="l-red l-margina-gore-srednja">                    
+                    <div class="l-kol-1-od-4">                        
                         <figure class="logo-sekcija">
                             <img src="~/Content/Images/Galerija/crr.jpg" />
                         </figure>
@@ -140,52 +141,54 @@
                             <img src="~/Content/Images/Galerija/dx.jpg" />
                         </figure>
                     </div>                        
-                </div>
-                <div class="l-red">
-                    <div class="l-kol-1-od-4">
-                        <figure class="logo-sekcija">
-                            <img src="~/Content/Images/Galerija/mw.jpg" />
-                        </figure>
-                    </div>
-                    <div class="l-kol-1-od-4">
-                        <figure class="logo-sekcija">
-                            <img src="~/Content/Images/Galerija/sh.jpg" />
-                        </figure>
-                    </div>
-                    <div class="l-kol-1-od-4">
-                        <figure class="logo-sekcija">
-                            <img src="~/Content/Images/Galerija/ahc.jpg" />
-                        </figure>
-                    </div>
-                    <div class="l-kol-1-od-4">
-                        <figure class="logo-sekcija">
-                            <img src="~/Content/Images/Galerija/btb.jpg" />
-                        </figure>
-                    </div>
-                </div>
-                <div class="l-red">
-                    <div class="l-kol-1-od-4">
-                        <figure class="logo-sekcija">
-                            <img src="~/Content/Images/Galerija/ctl.jpg" />
-                        </figure>
-                    </div>
-                    <div class="l-kol-1-od-4">
-                        <figure class="logo-sekcija">
-                            <img src="~/Content/Images/Galerija/em.jpg" />
-                        </figure>
-                    </div>
-                    <div class="l-kol-1-od-4">
-                        <figure class="logo-sekcija">
-                            <img src="~/Content/Images/Galerija/h2o.jpg" />
-                        </figure>
-                    </div>
-                    <div class="l-kol-1-od-4">
-                        <figure class="logo-sekcija">
-                            <img src="~/Content/Images/Galerija/qp.jpg" />
-                        </figure>
-                    </div>
-                </div>
-                </div>
+                </div>                
+                   <div id="vise" class="collapse">
+                       <div class="l-red">
+                           <div class="l-kol-1-od-4">
+                               <figure class="logo-sekcija">
+                                   <img src="~/Content/Images/Galerija/mw.jpg" />
+                               </figure>
+                           </div>
+                           <div class="l-kol-1-od-4">
+                               <figure class="logo-sekcija">
+                                   <img src="~/Content/Images/Galerija/sh.jpg" />
+                               </figure>
+                           </div>
+                           <div class="l-kol-1-od-4">
+                               <figure class="logo-sekcija">
+                                   <img src="~/Content/Images/Galerija/ahc.jpg" />
+                               </figure>
+                           </div>
+                           <div class="l-kol-1-od-4">
+                               <figure class="logo-sekcija">
+                                   <img src="~/Content/Images/Galerija/btb.jpg" />
+                               </figure>
+                           </div>
+                       </div>
+                       <div class="l-red">
+                           <div class="l-kol-1-od-4">
+                               <figure class="logo-sekcija">
+                                   <img src="~/Content/Images/Galerija/ctl.jpg" />
+                               </figure>
+                           </div>
+                           <div class="l-kol-1-od-4">
+                               <figure class="logo-sekcija">
+                                   <img src="~/Content/Images/Galerija/em.jpg" />
+                               </figure>
+                           </div>
+                           <div class="l-kol-1-od-4">
+                               <figure class="logo-sekcija">
+                                   <img src="~/Content/Images/Galerija/h2o.jpg" />
+                               </figure>
+                           </div>
+                           <div class="l-kol-1-od-4">
+                               <figure class="logo-sekcija">
+                                   <img src="~/Content/Images/Galerija/qp.jpg" />
+                               </figure>
+                           </div>
+                       </div>
+                   </div>                
+                </div>            
             </div>            
         </section>
 
@@ -317,6 +320,18 @@
                     scrollTop: $("#specPonuda").offset().top
                 }, 750);
             })
+        });
+        //<a href="#vise" class="vise pull-right" data-toggle="collapse"><i id="i1" class="fas fa-angle-down"></i></a>
+        var div = $("#vise");
+        $("#pogledajVise").click(function () {
+            if (div.hasClass("collapse")) {
+                document.getElementById("strelica-dole").setAttribute('hidden',true);
+                document.getElementById("strelica-gore").removeAttribute('hidden');
+            }
+            else {                
+                document.getElementById("strelica-dole").removeAttribute('hidden', true);
+                document.getElementById("strelica-gore").setAttribute('hidden', true);
+            }
         });
     </script>
 }
